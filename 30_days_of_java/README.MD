@@ -1,6 +1,7 @@
-# 30DayDevChallenge
-
-Welcome to the 30DayDevChallenge repository! This repository is dedicated to a month-long coding challenge designed to help developers of all levels enhance their skills through daily coding tasks and projects. Whether you're a beginner looking to build a strong foundation or an experienced developer aiming to refine your expertise, this challenge offers a structured approach to consistent learning and improvement.
+📌 # 30DayDevChallenge
+------------------
+**Project-Guidance**: Welcome to the 30DayDevChallenge repository! This repository is dedicated to a month-long coding challenge designed to help developers of all levels enhance their skills through daily coding tasks and projects. Whether you're a beginner looking to build a strong foundation or an experienced developer aiming to refine your expertise, this challenge offers a structured approach to consistent learning and improvement. .
+Being an open source contributor doesn't just mean writing code, either. You can help out by writing documentation, tests, or even giving suggestions. 🌟🏆
 
 ## What to Expect
 
@@ -9,28 +10,59 @@ Welcome to the 30DayDevChallenge repository! This repository is dedicated to a m
 - **Incremental Difficulty**: Tasks are organized to progressively increase in difficulty, ensuring a balanced learning curve.
 - **Resource Links**: Helpful resources and references are provided to guide you through each challenge.
 
-## Repository Structure
 
-- **Day 1 to Day 30**: Each day has its own folder containing the challenge description, sample code, and any necessary resources.
-- **Solutions**: Suggested solutions and explanations for each challenge are provided in the respective folders.
-- **Resources**: A collection of useful links, tutorials, and documentation to assist you throughout the challenge.
 
-## How to Participate
+## Contributing :handshake:
 
-1. **Clone the Repository**: Start by cloning this repository to your local machine.
-   ```bash
-   git clone https://github.com/jitacm/-30DayDevChallenge-.git
+ **Kindly follow the steps below to get started:** 
 
-2. **Explore the Challenges**: Navigate to the folder for the current day and read the challenge description.
+**0.** Star [this](https://github.com/jitacm/-30DayDevChallenge-) repository.
 
-3. **Code and Learn**: Work on the challenge, using the provided resources and your own research to find solutions.
+**1.** Fork [this](https://github.com/jitacm/-30DayDevChallenge-) repository.
 
-4. **Share Your Progress**: Document your progress, share your solutions, and engage with other participants through issues and pull requests.
+**2.** Clone the forked repository.
 
-# Contributing
-Contributions are welcome! If you have ideas for new challenges, improvements to existing ones, or general feedback, please feel free to create an issue or submit a pull request. Let's make this repository a collaborative and enriching experience for everyone.
+```bash
+git clone https://github.com/<your-github-username>/-30DayDevChallenge-
+```
 
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
+**3.** Navigate to the project directory.
 
-   
+```bash
+cd -30DayDevChallenge-
+```
+
+**4.** Create a new branch.
+
+```bash
+git checkout -b <your_branch_name>
+```
+
+**5.** Make changes.
+
+**6.** Stage your changes and commit
+
+```bash
+git add -A
+
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !
+
+**9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [-30DayDevChallenge-](https://github.com/jitacm/-30DayDevChallenge-). :v: :heart: 💥
+
+<br><br>
+
+## Awesome contributors :star_struck:
+<a href="https://github.com/jitacm/-30DayDevChallenge-/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jitacm/-30DayDevChallenge-" />
+</a> <br><br>
+
+:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:   
