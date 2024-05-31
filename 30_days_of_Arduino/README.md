@@ -1,4 +1,7 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 35_8f0a901e](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/04c46e05-46f3-43d0-9a52-f5958366661a)
+
+
 # **30 Days of Arduino** 📟
 
 Welcome to the 30 Days of Arduino project! This initiative is designed to help both beginners and experienced developers enhance their Arduino skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
