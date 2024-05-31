@@ -1,6 +1,7 @@
 
 
-![WhatsApp Image 2024-06-01 at 01 39 11_a37cecd5](https://github.com/rohansnishad/Rohan_Nishad.io/assets/98040172/598a1963-cfe3-4863-82a5-43499337507a)
+![WhatsApp Image 2024-06-01 at 01 39 11_a37cecd5](https://github.com/jitacm/-30DayDevChallenge-/assets/163456457/4ffbc7ed-b9be-4469-b888-563d7e7fba5f)
+
 
 📌30DayDevChallenge
 ------------------
