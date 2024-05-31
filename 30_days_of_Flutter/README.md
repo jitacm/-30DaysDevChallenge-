@@ -1,4 +1,6 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 36_aaea63b2](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/520eac8a-2472-4021-a000-137098dd0866)
+
 # **30 Days of Flutter** 📱
 Welcome to the 30 Days of Flutter project! This initiative is designed to help both beginners and experienced developers enhance their Flutter skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
 
