@@ -1,4 +1,7 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 36_56ac45ef](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/d2cdc37e-5fac-4c40-8b1f-6a88f68d8212)
+
+
 # **30 Days of JavaScript** 🚀
 Welcome to the 30 Days of JavaScript project! This initiative is designed to help both beginners and experienced developers enhance their JavaScript skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
 
