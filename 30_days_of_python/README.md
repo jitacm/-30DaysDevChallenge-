@@ -1,4 +1,7 @@
 
+
+![WhatsApp Image 2024-05-31 at 23 46 36_0b079c28](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/d8a51391-e1bd-4414-96fb-717510868569)
+
 # **30 Days of Python** 🐍
 Welcome to the 30 Days of Python project! This initiative is designed to help both beginners and experienced developers enhance their Python programming skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
 
