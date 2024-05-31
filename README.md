@@ -8,14 +8,7 @@ To contribute to this project, each team member must:
 ### 2️⃣ Create a new folder within that forked repository. The naming convention for the folder should be
    TeamName (TeamLeaderName). Replace TeamName with your actual team name and TeamLeaderName with the name of your team leader.
    
- ### 3️⃣ Inside your team's folder, create a README.md file. This file should contain the following information:
-- **👥 Team Member Names:** List everyone participating from your team.
-- **📧 Emails:** A contact email of Team Leader.
-- **🌐 Domain:** The focus area of your team within the project.
-- **💻 Technology Used:** All technologies, frameworks, and tools your team is utilizing.
-- **📖 Project Description:** A succinct description of your project/component, its features, and its objectives.
-- **📸 Screenshots:** Visuals of your project to give everyone a glimpse of your work.
-- **🛠 Installation Instructions:** Step-by-step guide on how to get your project up and running, including prerequisites and environment setup.
+
   
  
 ..
