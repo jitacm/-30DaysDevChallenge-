@@ -1,4 +1,6 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 35_aabaa074](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/f8d59a19-4829-4f30-9cad-b2c950867b56)
+
 # **30 Days of Java** ☕
 Welcome to the 30 Days of Java project! This initiative is designed to help both beginners and experienced developers enhance their Java programming skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
 
