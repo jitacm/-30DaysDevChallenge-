@@ -1,4 +1,6 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 36_f6336038](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/37783e60-8ee5-4995-8424-3f63a22589e6)
+
 # **30 Days of C/C++** 📟
 
 Welcome to the 30 Days of C/C++ project! This initiative is designed to help both beginners and experienced developers enhance their C and C++ programming skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
