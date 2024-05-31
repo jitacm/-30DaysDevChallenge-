@@ -1,4 +1,7 @@
 
+![WhatsApp Image 2024-05-31 at 23 46 35_6be5f1f5](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/4d1ee05d-b0a4-4556-b6fd-03250206cd68)
+
+
 # **30 Days of Cloud** ☁️
 
 Welcome to the 30 Days of Cloud project! This initiative is designed to help both beginners and experienced developers enhance their cloud computing skills by completing a series of daily projects. Each day, a new project will be released, providing an opportunity to learn, create, and share your progress with the community.
