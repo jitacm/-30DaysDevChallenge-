@@ -10,9 +10,7 @@ A simple To-Do List app built with modern JavaScript (ES6+), HTML5, and CSS3. It
 - **Local Storage:** Tasks are stored locally in the browser's local storage, ensuring persistence between sessions.
 
 ## Preview
-
-
-
+![Screenshot 2024-06-04 010304](https://github.com/animex007/-30DayDevChallenge-/assets/93252366/8d4280c3-ef1a-424e-a9ba-f4d8bf022c92)
 ## Installation
 
 To run this application locally, you'll need to clone the repository and open `index.html` in your browser:
