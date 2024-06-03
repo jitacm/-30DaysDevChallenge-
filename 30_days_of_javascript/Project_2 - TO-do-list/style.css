@@ -1,0 +1,110 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #toDoApp {
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #newTask {
+    width: calc(100% - 22px);
+    border: none;
+    border-bottom: 2px solid #5c5c5c;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  #newTask:focus {
+    outline: none;
+    border-bottom-color: #ff4081;
+  }
+  
+  #addTaskButton {
+    background: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+  }
+  
+  #addTaskButton:hover {
+    background-color: #e03568;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    background: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  .task-item span {
+    flex: 1;
+    word-break: break-word;
+  }
+  
+  .delete-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff4081;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  .delete-button:focus {
+    outline: none;
+  }
+  
+  .delete-button:hover {
+    color: #e03568;
+  }
+  
+  /* Add animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .task-item {
+    animation: fadeIn 0.3s ease;
+  }
+
+  
