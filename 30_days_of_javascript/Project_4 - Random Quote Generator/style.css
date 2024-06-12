@@ -1,0 +1,33 @@
+#quoteBox {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #quoteText {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  #quoteAuthor {
+    text-align: right;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  #newQuoteButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  
+  #newQuoteButton:hover {
+    background-color: #45a049;
+  }
