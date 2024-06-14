@@ -1,4 +1,4 @@
-### Image Processing Application: 
+# Image Processing Application: 
 
 #### Overview
 The **Image Processing Application** is a Python-based application designed to enhance and transform images through a variety of advanced filters and effects. Leveraging powerful image processing libraries, this application allows users to apply artistic effects, improve image quality, and perform complex transformations with ease.
