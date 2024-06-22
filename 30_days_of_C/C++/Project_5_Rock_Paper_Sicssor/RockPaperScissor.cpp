@@ -4,6 +4,7 @@
 using namespace std;
 char getComputerMove()
 {
+
     int move;
     srand(time(NULL));
     move = rand() % 3;
