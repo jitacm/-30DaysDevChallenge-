@@ -21,9 +21,9 @@ This script automates database maintenance tasks (backup, vacuum, reindex) and u
    ```bash
    git clone https://github.com/jitacm/-30DaysDevChallenge-.git
    cd ./30_days_of_Cloud/Project_2_Combined_Database_Maintenance_and_User_Management_Script/
-   Configure Database Settings:
    ```
 
+   Configure Database Settings:
 Edit the script (maintenance_and_users.sh) to set your database name (DB_NAME) and user (DB_USER) in the configuration section.
 
 bash
