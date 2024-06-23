@@ -1,45 +1,51 @@
-# QR Scanner and Generator App
+# PDF Generator Application
 
-A Flutter application for scanning and generating QR codes.
+This Flutter application allows users to generate, view, and share PDF documents easily. It provides a simple interface for creating PDFs from text input and customizable templates.
 
 ## Features
 
-- Scan QR codes using the camera
-- Generate QR codes from text input
-- Save and share generated QR codes
-- History of scanned QR codes
-
-## Screenshots
-![WhatsApp Image 2024-06-22 at 19 57 39_5816bf1e](https://github.com/rohansnishad/-30DaysDevChallenge-/assets/98040172/50066820-e435-43a9-bc36-9ef5d94e9f01)
-![WhatsApp Image 2024-06-22 at 19 57 39_f1218def](https://github.com/rohansnishad/-30DaysDevChallenge-/assets/98040172/86e3b20e-b925-4ec2-9324-444761c9c55e)
-![WhatsApp Image 2024-06-22 at 19 57 39_06a87dab](https://github.com/rohansnishad/-30DaysDevChallenge-/assets/98040172/8baed644-d81f-4f76-97cd-6c2d11bb6118)
+- **Create PDFs**: Generate PDF documents from user input text.
+- **View PDFs**: Open and read PDF files within the application.
+- **Share PDFs**: Share the generated PDF files via email or other applications.
+- **Customizable Templates**: Use pre-defined templates for consistent styling.
 
 
 ## Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
 ### Prerequisites
 
-- Flutter SDK: [Flutter installation guide](https://flutter.dev/docs/get-started/install)
-- A code editor (VS Code, Android Studio, etc.)
+Make sure you have the following installed:
+
+- [Flutter](https://flutter.dev/docs/get-started/install) (version 2.0 or later)
+- [Dart](https://dart.dev/get-dart)
 
 ### Installation
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/qr_scanner_generator.git
-    cd qr_scanner_generator
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/pdf-generator-app.git
+    cd pdf-generator-app
     ```
 
-2. Install dependencies:
-    ```sh
+2. **Install dependencies:**
+
+    ```bash
     flutter pub get
     ```
 
-3. Run the app:
-    ```sh
+3. **Run the application:**
+
+    ```bash
     flutter run
     ```
+
+## Usage
+
+1. Open the app.
+2. Navigate to the "Create PDF" section.
+3. Enter the text or select a template.
+4. Click the "Generate PDF" button.
+5. View or share the generated PDF.
 
 
