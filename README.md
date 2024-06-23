@@ -5,7 +5,7 @@
 
 📌30DaysDevChallenge
 ------------------
-Welcome to the 30DayDevChallenge repository! This repository is dedicated to a month-long coding challenge designed to help developers of all levels enhance their skills through daily coding tasks and projects. Whether you're a beginner looking to build a strong foundation or an experienced developer aiming to refine your expertise, this challenge offers a structured approach to consistent learning and improvement. .
+Welcome to the 30DaysDevChallenge repository! This repository is dedicated to a month-long coding challenge designed to help developers of all levels enhance their skills through daily coding tasks and projects. Whether you're a beginner looking to build a strong foundation or an experienced developer aiming to refine your expertise, this challenge offers a structured approach to consistent learning and improvement. .
 Being an open source contributor doesn't just mean writing code, either. You can help out by writing documentation, tests, or even giving suggestions. 🌟🏆
 <br><br>
 
@@ -67,9 +67,9 @@ Thank you for your contributions! Your efforts help make our project better for 
 
  **Kindly follow the steps below to get started:** 
 
-**0.** Star [this](https://github.com/jitacm/-30DayDevChallenge-) repository.
+**0.** Star [this](https://github.com/jitacm/-30DaysDevChallenge-) repository.
 
-**1.** Fork [this](https://github.com/jitacm/-30DayDevChallenge-) repository.
+**1.** Fork [this](https://github.com/jitacm/-30DaysDevChallenge-) repository.
 
 **2.** Clone the forked repository.
 
@@ -107,12 +107,12 @@ git push -u origin <your_branch_name>
 
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !
 
-**9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [-30DayDevChallenge-](https://github.com/jitacm/-30DayDevChallenge-). :v: :heart: 💥
+**9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [-30DayDevChallenge-](https://github.com/jitacm/-30DaysDevChallenge-). :v: :heart: 💥
 <br><br>
 
 ## Awesome contributors :star_struck:
-<a href="https://github.com/jitacm/-30DayDevChallenge-/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jitacm/-30DayDevChallenge-" />
+<a href="https://github.com/jitacm/-30DaysDevChallenge-/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jitacm/-30DaysDevChallenge-" />
 </a> <br><br>
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:   
