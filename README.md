@@ -112,7 +112,10 @@ git push -u origin <your_branch_name>
 
 ## Awesome contributors :star_struck:
 <a href="https://github.com/jitacm/-30DaysDevChallenge-/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jitacm/-30DaysDevChallenge-" />
-</a> <br><br>
+  
+  <img src="https://contrib.rocks/image?repo=jitacm/-30DaysDevChallenge-"/>
+</a> 
+<br><br>
+
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:   
