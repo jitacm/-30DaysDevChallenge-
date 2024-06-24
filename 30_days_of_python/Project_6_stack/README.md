@@ -1,46 +1,52 @@
-# MCQ Test in C
+# Stack Management Program in Python
 
-This repository contains a simple Multiple Choice Question (MCQ) test program written in C.
+This repository contains a simple stack management program written in Python. The program allows users to push values onto a stack, pop values from the stack, and display the current state of the stack.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Code](#example-code)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
-The MCQ Test in C allows users to take a multiple-choice quiz through the command line. The program presents questions to the user, records their answers, and calculates the final score.
+The Stack Management Program in Python allows users to interact with a stack data structure through a command-line interface. Users can push values onto the stack, pop values from the stack, and display the stack's current contents.
 
 ## Features
 
-- Present multiple-choice questions
-- Record user answers
-- Calculate and display the final score
+- Push values onto the stack
+- Pop values from the stack
+- Display the current state of the stack
 
 ## Requirements
 
 To run this program, you need:
 
-- A C compiler (e.g., GCC)
+- Python 3.x installed
 - A terminal or command prompt
 
 ## Installation
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/yourusername/mcq-test-in-c.git
+    git clone https://github.com/yourusername/stack-management-python.git
     ```
 
 2. Navigate to the repository's directory:
     ```bash
-    cd mcq-test-in-c
-    ```
-
-3. Compile the C program using your C compiler. For example, using GCC:
-    ```bash
-    gcc -o mcq_test mcq_test.c
+    cd stack-management-python
     ```
 
 ## Usage
 
-1. Run the compiled program:
+1. Run the Python program:
     ```bash
-    ./mcq_test
+    python stack_management.py
     ```
 
-2. Follow the on-screen instructions to take the quiz.
+2. Follow the on-screen instructions to push, pop, or display stack values.
