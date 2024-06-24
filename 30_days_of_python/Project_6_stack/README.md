@@ -2,17 +2,6 @@
 
 This repository contains a simple stack management program written in Python. The program allows users to push values onto a stack, pop values from the stack, and display the current state of the stack.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Code](#example-code)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 The Stack Management Program in Python allows users to interact with a stack data structure through a command-line interface. Users can push values onto the stack, pop values from the stack, and display the stack's current contents.
