@@ -1,23 +1,12 @@
-# Tip Calculator
-
-A simple Tip Calculator built with JavaScript, HTML, and CSS to help you calculate the tip amount and total bill based on the bill amount and desired tip percentage.
-
+# Expense Tracker
 ## Introduction
-The Tip Calculator is designed to assist users in quickly calculating the amount of tip to leave at restaurants or other service-based establishments. It also helps in determining the total amount to be paid after adding the tip to the original bill amount.
+Expense Tracker is a simple web application built with HTML, CSS, and JavaScript. It allows users to track their expenses and incomes, providing a balance and transaction history.
 
-## Features
-- Calculate tip based on bill amount and tip percentage.
-- Display both the tip amount and the total amount (bill amount + tip).
-- Simple and intuitive user interface.
+### Features
+- Balance Display: Shows the current balance.
+- Add Transactions: Allows users to add new transactions with a description and amount.
+- Transaction History: Displays a list of all transactions with amount and type (income or expense).
+- Dynamic Styling: Transactions are styled differently based on whether they are income (green) or expense (red).
 
-## Description
-The Tip Calculator takes in two inputs from the user:
-1. **Bill Amount**: The total amount of the bill.
-2. **Tip Percentage**: The percentage of the bill amount that the user wishes to leave as a tip.
-
-Upon clicking the "Calculate Tip" button, the calculator performs the following calculations:
-- **Tip Amount**: Calculated as `billAmount * (tipPercentage / 100)`.
-- **Total Amount**: Calculated as `billAmount + tipAmount`.
-
-The results are then displayed to the user, showing both the tip amount and the total amount to be paid.
-
+### Description
+Expense Tracker is designed to help users manage their finances by tracking their income and expenses. It calculates the balance based on all transactions entered and displays a history of these transactions. Users can input new transactions, specifying whether it is an income (positive amount) or expense (negative amount). The application provides visual feedback with green text for incomes and red text for expenses in the transaction history.

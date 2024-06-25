@@ -6,21 +6,19 @@ body {
     padding: 20px;
 }
 
-#calculator {
-    max-width: 400px;
+#converter {
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, button {
+input, select, button {
     padding: 10px;
     margin: 10px 0;
-    width: calc(100% - 22px); /* 100% width minus padding and borders */
 }
 
 #result {
     margin-top: 20px;
-    font-size: 1.2em;
 }

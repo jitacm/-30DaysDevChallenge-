@@ -1,23 +1,15 @@
-# Tip Calculator
+# Unit Converter
 
-A simple Tip Calculator built with JavaScript, HTML, and CSS to help you calculate the tip amount and total bill based on the bill amount and desired tip percentage.
+A simple unit converter web application built with HTML, CSS, and JavaScript. Convert lengths between different units such as meters, kilometers, centimeters, inches, feet, and yards.
+
 
 ## Introduction
-The Tip Calculator is designed to assist users in quickly calculating the amount of tip to leave at restaurants or other service-based establishments. It also helps in determining the total amount to be paid after adding the tip to the original bill amount.
+This is a basic unit converter web application that allows users to convert lengths between various units including meters, kilometers, centimeters, inches, feet, and yards.
 
 ## Features
-- Calculate tip based on bill amount and tip percentage.
-- Display both the tip amount and the total amount (bill amount + tip).
+- Convert lengths between different units: meter (m), kilometer (km), centimeter (cm), inch (in), foot (ft), and yard (yd).
 - Simple and intuitive user interface.
+- Real-time conversion upon input.
 
 ## Description
-The Tip Calculator takes in two inputs from the user:
-1. **Bill Amount**: The total amount of the bill.
-2. **Tip Percentage**: The percentage of the bill amount that the user wishes to leave as a tip.
-
-Upon clicking the "Calculate Tip" button, the calculator performs the following calculations:
-- **Tip Amount**: Calculated as `billAmount * (tipPercentage / 100)`.
-- **Total Amount**: Calculated as `billAmount + tipAmount`.
-
-The results are then displayed to the user, showing both the tip amount and the total amount to be paid.
-
+This unit converter web application provides a straightforward way to convert lengths between different units. It calculates conversions in real-time based on user input and displays the result immediately. The application supports several commonly used length units, making it versatile for various conversion needs.
