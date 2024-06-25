@@ -6,12 +6,6 @@ A simple quiz application built with JavaScript, HTML, and CSS. The app presents
 
 The Quiz App is designed to provide a fun and interactive way to test knowledge on various topics. It features multiple questions, each with several possible answers, and calculates the user's score at the end of the quiz.
 
-## Features
-
-- Multiple-choice questions
-- Instant feedback on answers
-- Score calculation
-- Easy to add new questions
 
 
 ### How It Works
