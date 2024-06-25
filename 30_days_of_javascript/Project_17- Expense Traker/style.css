@@ -6,21 +6,34 @@ body {
     padding: 20px;
 }
 
-#calculator {
-    max-width: 400px;
+#app {
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, button {
-    padding: 10px;
-    margin: 10px 0;
-    width: calc(100% - 22px); /* 100% width minus padding and borders */
+.list {
+    list-style: none;
+    padding: 0;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
+.list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list li span {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
 }
