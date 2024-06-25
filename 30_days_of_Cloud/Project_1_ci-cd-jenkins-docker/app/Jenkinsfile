@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    docker.build('my-app-image')
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                script {
+                    docker.image('my-app-image').inside {
+                        sh 'npm test'  // or 'pytest' for Python
+                    }
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    docker.image('my-app-image').run('-d -p 8080:3000 my-app-image')  // Adjust ports if necessary
+                }
+            }
+        }
+    }
+}
