@@ -55,5 +55,5 @@ The Geological Map Generator is a software tool designed for geologists, researc
    - Export your geological maps as images or interactive HTML files.
 
 ## Current Interface
-![2D View]("C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2024-06-26 210204.png")
-![3D View]("C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2024-06-26 210220.png")
+![2D View](C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2024-06-26 210204.png)
+![3D View](C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2024-06-26 210220.png)
