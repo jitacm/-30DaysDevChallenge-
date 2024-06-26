@@ -55,5 +55,5 @@ The Geological Map Generator is a software tool designed for geologists, researc
    - Export your geological maps as images or interactive HTML files.
 
 ## Current Interface
-![2D View](30_days_of_python/Project_29_Geological_Map_Gennerator/assets/Screenshot 2024-06-26 210204.png)
-![3D View](C:\Users\Acer\OneDrive\Pictures\Screenshots\Screenshot 2024-06-26 210220.png)
+![2D View](https://github.com/Walayhs/-30DaysDevChallenge-/blob/main/30_days_of_python/Project_29_Geological_Map_Gennerator/assets/Screenshot%202024-06-26%20210204.png?raw=true)
+![3D View](https://github.com/Walayhs/-30DaysDevChallenge-/blob/main/30_days_of_python/Project_29_Geological_Map_Gennerator/assets/Screenshot%202024-06-26%20210220.png?raw=true)
