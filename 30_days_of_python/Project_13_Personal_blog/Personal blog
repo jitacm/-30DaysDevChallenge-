@@ -1,0 +1,28 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+posts = []
+
+@app.route('/posts', methods=['GET'])
+def get_posts():
+    return jsonify(posts)
+
+@app.route('/posts', methods=['POST'])
+def add_post():
+    post = request.get_json()
+    posts.append(post)
+    return jsonify(post), 201
+
+@app.route('/posts/<int:post_id>', methods=['PUT'])
+def update_post(post_id):
+    post = request.get_json()
+    posts[post_id] = post
+    return jsonify(post)
+
+@app.route('/posts/<int:post_id>', methods=['DELETE'])
+def delete_post(post_id):
+    post = posts.pop(post_id)
+    return jsonify(post)
+
+if __name__ == '__main__':
+    app.run(debug=True)
