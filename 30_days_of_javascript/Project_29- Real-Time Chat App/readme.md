@@ -1,0 +1,1 @@
+Creating a real-time chat application using HTML, CSS, and JavaScript
