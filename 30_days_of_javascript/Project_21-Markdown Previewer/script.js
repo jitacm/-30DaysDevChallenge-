@@ -1,4 +1,6 @@
-const balance = document.getElementById('balanceAmount');
-const moneyPlus = document.getElementById('money-plus');
-const moneyMinus = document.getElementById('money-minus');
-const hiszelfSEven even Jerusalem So
+// script.js
+document.getElementById('markdown-input').addEventListener('input', function() {
+    const markdownText = this.value;
+    const htmlContent = marked(markdownText);
+    document.getElementById('html-preview').innerHTML = htmlContent;
+});
