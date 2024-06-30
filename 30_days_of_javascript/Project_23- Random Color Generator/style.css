@@ -1,39 +1,37 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
-
-#app {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-}
-
-.list li {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.list li span {
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.color-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.red {
-    color: red;
-}
-
-.green {
-    color: green;
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
 }
