@@ -59,7 +59,4 @@ This is a simple Hangman game implemented in C. The program allows one player to
     Sorry, you've run out of attempts. The word was: example
     ```
 
-## Example
-
-### Starting the Game
-
+    
