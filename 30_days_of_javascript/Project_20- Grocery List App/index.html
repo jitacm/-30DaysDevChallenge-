@@ -3,28 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Grocery List App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Expense Tracker</h1>
-        <div id="balance">Balance: $<span id="balanceAmount">0.00</span></div>
-        <h2>Add New Transaction</h2>
-        <form id="transactionForm">
-            <label for="text">Text</label>
-            <input type="text" id="text" placeholder="Enter text..." required>
-            <label for="amount"
-                >Amount <br />
-                (negative - expense, positive - income)</label
-            >
-            <input type="number" id="amount" placeholder="Enter amount..." required />
-            <button class="btn">Add Transaction</button>
-        </form>
-        <h2>History</h2>
-        <ul id="transactionList" class="list">
-            <!-- Transactions dynamically added here -->
-        </ul>
+    <div class="container">
+        <h1>Grocery List</h1>
+        <div class="input-section">
+            <input type="text" id="item-input" placeholder="Enter a new item">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+        <ul id="grocery-list"></ul>
     </div>
     <script src="script.js"></script>
 </body>
