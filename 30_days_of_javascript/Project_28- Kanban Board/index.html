@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Expense Tracker</h1>
-        <div id="balance">Balance: $<span id="balanceAmount">0.00</span></div>
-        <h2>Add New Transaction</h2>
-        <form id="transactionForm">
-            <label for="text">Text</label>
-            <input type="text" id="text" placeholder="Enter text..." required>
-            <label for="amount"
-                >Amount <br />
-                (negative - expense, positive - income)</label
-            >
-            <input type="number" id="amount" placeholder="Enter amount..." required />
-            <button class="btn">Add Transaction</button>
-        </form>
-        <h2>History</h2>
-        <ul id="transactionList" class="list">
-            <!-- Transactions dynamically added here -->
-        </ul>
+    <div class="container">
+        <h1>Kanban Board</h1>
+        <div class="kanban">
+            <div class="column">
+                <h2>To Do</h2>
+                <div id="todo" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="column">
+                <h2>In Progress</h2>
+                <div id="inProgress" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="column">
+                <h2>Done</h2>
+                <div id="done" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
