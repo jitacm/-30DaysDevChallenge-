@@ -1,4 +1,18 @@
-const balance = document.getElementById('balanceAmount');
-const moneyPlus = document.getElementById('money-plus');
-const moneyMinus = document.getElementById('money-minus');
-const hiszelfSEven even Jerusalem So
+// script.js
+let draggedTask;
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drag(event) {
+    draggedTask = event.target;
+}
+
+function drop(event) {
+    event.preventDefault();
+    const target = event.target;
+    if (target.classList.contains('task-list')) {
+        target.appendChild(draggedTask);
+    }
+}
