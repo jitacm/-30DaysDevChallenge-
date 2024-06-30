@@ -1,13 +1,15 @@
-# Motion Detector Project
+# Light Follower Robot Project
 
 ## Description
-This project uses a PIR (Passive Infrared) sensor to detect motion and can trigger an alarm or light (LED) connected to an Arduino board. PIR sensors are commonly used in security systems and automation.
+Build a robot that follows light using photoresistors and an Arduino board. The robot adjusts its movement direction based on the intensity of light detected by the photoresistors.
 
 ## Components Needed
 - Arduino board (e.g., Uno, Nano)
-- PIR (Passive Infrared) sensor module
-- Buzzer or LED (for indication)
-- Resistors (if needed for LED or buzzer)
+- Photoresistors (2)
+- Motors (DC motors)
+- Motor driver module (e.g., L298N)
+- Robot chassis
+- Wheels and motors for movement
 - Breadboard
 - Jumper wires
 
@@ -15,14 +17,15 @@ This project uses a PIR (Passive Infrared) sensor to detect motion and can trigg
 Include a circuit diagram image here if you create one.
 
 ## Instructions
-1. **Setup**: Connect the components as shown in the circuit diagram.
-2. **Upload Code**: Upload the provided Arduino code (`motion_detector.ino`) to your Arduino board.
-3. **Run**: Once uploaded, observe the LED (or listen for the buzzer) to detect motion when someone moves in front of the PIR sensor.
+1. **Setup**: Mount photoresistors on the front of the robot chassis, connect them to Arduino analog input pins.
+2. **Motor Control**: Connect motors to motor driver outputs and Arduino digital pins for motor control.
+3. **Upload Code**: Upload the provided Arduino code (`light_follower_robot.ino`) to your Arduino board.
+4. **Run**: Once uploaded, place the robot in an environment with varying light intensities. It should follow light sources detected by the photoresistors.
 
 ## Additional Notes
-- Adjust sensitivity and timing of the PIR sensor if necessary.
-- Modify the code to integrate more complex actions such as sending notifications or controlling other devices.
+- Calibrate the robot's response to light intensity by adjusting threshold values in the Arduino code.
+- Experiment with different light sources and environments to test the robot's performance.
 
-Enhance the project by adding features like data logging or remote monitoring using wireless modules.
+Expand the project by adding obstacle avoidance or remote control functionalities.
 
-Have fun experimenting with motion detection using Arduino!
+Have fun building your light-following robot with Arduino!
