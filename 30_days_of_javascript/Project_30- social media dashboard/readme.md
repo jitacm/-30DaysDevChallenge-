@@ -1,0 +1,1 @@
+Building a social media dashboard involves integrating with APIs from various platforms to fetch and display data.

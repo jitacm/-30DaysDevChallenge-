@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.platform {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.metric p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
