@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
+        <textarea id="user-input" placeholder="Start typing here..." oninput="startTyping()"></textarea>
+        <div id="results">
+            <p id="wpm"></p>
+            <p id="time"></p>
+        </div>
+        <button onclick="resetTest()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
