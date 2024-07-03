@@ -1,47 +1,26 @@
-# Tic-Tac-Toe Game in Java
+# Tic-Tac-Toe Game
 
-This repository contains a simple Tic-Tac-Toe game implemented in Java. Two players can play the game by taking turns to place their symbols ('X' or 'O') on a 3x3 grid, with the goal of getting three in a row horizontally, vertically, or diagonally.
+This is a simple command-line implementation of the classic Tic-Tac-Toe game in Java. The game allows two players to take turns marking spaces on a 3x3 board until one player wins by getting three marks in a row, column, or diagonal, or the board is full with no winner (resulting in a draw).
 
-## Introduction
+git## Features
 
-The Tic-Tac-Toe game in Java allows two players to play the classic game via the console. Players take turns to enter their move, and the game checks for a win condition after each move.
+- **Interactive Gameplay:** Players take turns entering their moves via console input.
+- **Winning Condition Detection:** The game checks after each move if a player has won by getting three marks in a row, column, or diagonal.
+- **Input Validation:** Ensures that player moves are within valid board coordinates and on an empty space.
+- **Clear Console Output:** Displays the current state of the board after each move, providing a clear view of the game progression.
 
-## Features
+## How to Run
 
-- Initialize a 3x3 game board
-- Allow two players to take turns
-- Check for win conditions (rows, columns, diagonals)
-- Display the game board after each move
+To run the game:
+1. Clone the repository or download the source 
+2. Compile the `Main.java` file.
+3. Execute the compiled `.class` file using `java Main`.
 
-## Requirements
+## Instructions
 
-To run this program, you need:
+- Players alternate turns, starting with 'X'.
+- When prompted, enter the row and column (0-2) where you want to place your mark.
+- The game will notify if a move is invalid (e.g., out of bounds or on an occupied space).
+- The game ends when a player wins or the board is full.
 
-- Java Development Kit (JDK) installed
-- A terminal or command prompt
-
-## Installation
-
-1. Clone this repository to your local machine:
-    bash
-    git clone https://github.com/yourusername/tic-tac-toe-java.git
-    
-
-2. Navigate to the repository's directory:
-    bash
-    cd tic-tac-toe-java
-    
-
-3. Compile the Java program:
-    bash
-    javac Main.java
-    
-
-## Usage
-
-1. Run the compiled program:
-    bash
-    java Main
-    
-
-2. Follow the on-screen instructions to play the game.
+Enjoy playing Tic-Tac-Toe!
