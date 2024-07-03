@@ -8,8 +8,7 @@ This project is a simple console-based Student Record System written in C++. It 
 - View a student's details by roll number
 - Display all students
 
-## Requirements
-
+## Requirement
 - A C++ compiler (such as g++)
 
 ## Usage
