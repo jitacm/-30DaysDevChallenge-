@@ -1,0 +1,106 @@
+# Simple Chatbot in C++
+
+This is a simple chatbot implemented in C++. The chatbot can respond to basic greetings and queries.
+
+## Prerequisites
+
+- Visual Studio Code
+- C++ Compiler (like g++)
+- C++ extension for Visual Studio Code
+
+## Getting Started
+
+1. **Clone the Repository**
+
+    ```sh
+    git clone https://github.com/your-repository/simple-chatbot-cpp.git
+    cd simple-chatbot-cpp
+    ```
+
+2. **Open the Project in VS Code**
+
+    Open Visual Studio Code and select `File -> Open Folder` and choose the folder where you cloned the repository.
+
+3. **Configure the C++ Compiler**
+
+    Ensure you have a C++ compiler installed. If not, you can install g++ on your system.
+
+4. **Set Up Tasks and Launch Configurations**
+
+    Create a `tasks.json` file in the `.vscode` folder to configure the build task.
+
+    ```json
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "build",
+                "type": "shell",
+                "command": "g++",
+                "args": [
+                    "-g",
+                    "main.cpp",
+                    "-o",
+                    "main"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": ["$gcc"],
+                "detail": "Generated task by VS Code"
+            }
+        ]
+    }
+    ```
+
+    Create a `launch.json` file in the `.vscode` folder to configure the debugger.
+
+    ```json
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "C++ Launch",
+                "type": "cppdbg",
+                "request": "launch",
+                "program": "${workspaceFolder}/main",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "externalConsole": false,
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ],
+                "preLaunchTask": "build",
+                "miDebuggerPath": "/usr/bin/gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ],
+                "internalConsoleOptions": "openOnSessionStart"
+            }
+        ]
+    }
+    ```
+
+5. **Build and Run**
+
+    - To build the project, press `Ctrl+Shift+B` or go to `Terminal -> Run Build Task`.
+    - To run the project, press `F5` or go to `Run -> Start Debugging`.
+
+## Usage
+
+After running the project, you can interact with the chatbot via the terminal. Type your message and press `Enter` to get a response. Type `bye` to exit the chat.
+
+## Example
+
