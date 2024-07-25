@@ -1,3 +1,7 @@
+#146
+
+
+
 The Blog App is a platform where users can create, edit, and delete blogs easily. Users can add images, categorize their posts, and manage their blog content with an interactive and user-friendly interface. Whether you're sharing stories, insights, or tutorials, this app provides a seamless blogging experience.
 
 Key Features
