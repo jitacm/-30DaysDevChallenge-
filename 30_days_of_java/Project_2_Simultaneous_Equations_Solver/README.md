@@ -50,4 +50,12 @@ The core of the solution lies in the `solveEquations` method, which implements C
 
 ### 4. Output
 
-Finally, the program prints the solution to the console. If a unique solution exists, it displays the values of \(x\) and \(y\). Otherwise, it informs the user that no unique solution exists.
+The solution is displayed in a user-friendly graphical interface. If a unique solution exists, it shows the values of x and y. Otherwise, it informs the user that no unique solution exists.
+
+
+### Enhancing User Interaction with a Graphical User Interface (GUI)
+To enhance usability and make the tool more engaging, we have added a graphical user interface (GUI) using Java. This provides a more intuitive and visually appealing way for users to interact with the equation solver, significantly improving the overall experience.
+
+The GUI features input fields for the coefficients, a solve button, and a display area for the solution, all arranged in an aesthetically pleasing layout. Below is an example of how the modified interface looks:
+
+By integrating a GUI, we make the application more accessible to users who prefer visual interaction over command-line operations. This new interface ensures a seamless and user-friendly experience.
