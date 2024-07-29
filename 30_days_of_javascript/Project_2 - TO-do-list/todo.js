@@ -9,16 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     tasks.forEach(task => createTaskItem(task));
   
-    addButton.addEventListener('click', () => {
+    addButton.addEventListener("click", addTask);
+    newTaskInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        addTask();
+      }
+    });
+
+    function addTask() {
       const taskText = newTaskInput.value.trim();
       if (taskText) {
         const task = { text: taskText, completed: false };
         tasks.push(task);
         createTaskItem(task);
-        newTaskInput.value = '';
+        newTaskInput.value = "";
         saveToLocalStorage();
       }
-    });
+    }
   
     function createTaskItem(task) {
       const li = document.createElement('li');
@@ -28,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       li.innerHTML = `
-        <span>${task.text}</span>
+        <span contenteditable="true">${task.text}</span>
         <button class="delete-button">X</button>
       `;
   
@@ -38,13 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
         li.classList.toggle('completed', task.completed);
         saveToLocalStorage();
       });
+
+      // Edit task
+      const taskSpan = li.querySelector("span");
+      taskSpan.addEventListener("blur", () => {
+        task.text = taskSpan.innerText;
+        saveToLocalStorage();
+      });
+
+      // Prevent toggle completion on edit
+      taskSpan.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
   
       // Delete task
-      li.querySelector('.delete-button').addEventListener('click', () => {
+      li.querySelector('.delete-button').addEventListener('click', (e) => {
+        e.stopPropagation();
         li.remove();
         tasks.splice(tasks.indexOf(task), 1);
         saveToLocalStorage();
-        event.stopPropagation();
       });
   
       taskList.appendChild(li);
