@@ -1,4 +1,5 @@
 Weather App
+
 This Weather App allows users to check the weather conditions in any city. It fetches real-time weather data using the OpenWeatherMap API and displays the current temperature, weather conditions, humidity, and wind speed.
 
 Features
