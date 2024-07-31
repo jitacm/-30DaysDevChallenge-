@@ -30,7 +30,7 @@ To run the Number Guessing Game on your local machine, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/30DaysDevChallenge.git
+    git clone https://github.com/nikharepriyant/30DaysDevChallenge.git
     ```
 
 2. **Navigate to the project directory**:
