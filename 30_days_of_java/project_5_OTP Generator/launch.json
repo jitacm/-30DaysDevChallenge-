@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug OtpGenerator",
+            "request": "launch",
+            "mainClass": "com.otp.OtpGenerator",
+            "projectName": "otp-generator"
+        }
+    ]
+}
