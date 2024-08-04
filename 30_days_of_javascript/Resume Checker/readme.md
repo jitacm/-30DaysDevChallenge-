@@ -25,7 +25,7 @@ Resume Checker is a web application built with Python and Flask that helps users
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/resume-checker.git
+    git clone 
     ```
 
 2. **Navigate to the project directory:**
