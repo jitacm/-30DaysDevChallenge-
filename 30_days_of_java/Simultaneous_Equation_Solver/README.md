@@ -59,3 +59,8 @@ To enhance usability and make the tool more engaging, we have added a graphical 
 The GUI features input fields for the coefficients, a solve button, and a display area for the solution, all arranged in an aesthetically pleasing layout. Below is an example of how the modified interface looks:
 
 By integrating a GUI, we make the application more accessible to users who prefer visual interaction over command-line operations. This new interface ensures a seamless and user-friendly experience.
+
+### Here is the glimpse of the Simultaneous Equation Solver:
+
+![image](https://github.com/user-attachments/assets/6395fe26-6644-4a5d-ad3e-23dc02e9bc85)
+
