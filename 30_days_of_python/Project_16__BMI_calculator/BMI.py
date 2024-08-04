@@ -12,10 +12,12 @@ def get_positive_number(prompt):
         except ValueError:
             print("Invalid input. Please enter a numeric value.")  # Handle non-numeric input
 
-weight = get_positive_number("Enter your weight in kg: ")
-height = get_positive_number("Enter your height in meters: ")
+# Call get_positive_number within calculate_bmi to avoid initial inputs
+bmi = calculate_bmi(
+    get_positive_number("Enter your weight in kg: "),
+    get_positive_number("Enter your height in meters: ")
+)
 
-bmi = calculate_bmi(weight, height)
 print(f"Your BMI is {bmi:.2f}")
 
 if bmi < 18.5:
