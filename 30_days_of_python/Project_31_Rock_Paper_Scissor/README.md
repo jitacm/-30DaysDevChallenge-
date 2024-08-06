@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors Game
+[8:41 pm, 06/08/2024] Teena: # Rock, Paper, Scissors Game
 
 This is a simple Rock, Paper, Scissors game implemented using Python and Tkinter. The game allows a player to compete against the computer. 
 
