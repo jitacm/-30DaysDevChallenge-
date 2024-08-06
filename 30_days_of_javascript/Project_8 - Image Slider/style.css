@@ -48,3 +48,25 @@ body {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.indicators {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    z-index: 10;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #717171;
+}

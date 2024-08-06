@@ -1,4 +1,4 @@
-# Importing Libraries
+import time  # Import the time module
 from bs4 import BeautifulSoup
 import requests
 import requests.exceptions
@@ -29,10 +29,11 @@ try:
         print('[%d] Processing %s' % (count, url))
         try:
             response = requests.get(url)
+            time.sleep(1)  # Add a 1-second delay between requests
         except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
             continue
 
-        new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
+        new_emails = set(re.findall(r"[a-z0-9\.\-+]+@[a-z0-9\.\-+]+\.[a-z]+", response.text, re.I))
         emails.update(new_emails)
 
         soup = BeautifulSoup(response.text, features="lxml")
