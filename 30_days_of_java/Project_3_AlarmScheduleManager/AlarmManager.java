@@ -41,12 +41,13 @@ public class AlarmManager {
 
     private void triggerAlarm(AlarmTask task) {
         System.out.println("Alarm triggered for task: " + task.getTaskName());
-        playSound("alarm.wav");  // Use the relative path
+        playSound("resources/alarm.wav");  // Use the path to the resources directory
     }
 
     private void playSound(String soundFile) {
         try {
             File soundFilePath = new File(soundFile);
+            System.out.println("Absolute path: " + soundFilePath.getAbsolutePath());  // Print the absolute path
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(soundFilePath);
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
@@ -62,21 +63,25 @@ public class AlarmManager {
         Scanner scanner = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-        System.out.println("Enter the number of tasks you want to schedule:");
-        int numberOfTasks = scanner.nextInt();
-        scanner.nextLine();  // Consume newline
+        try {
+            System.out.println("Enter the number of tasks you want to schedule:");
+            int numberOfTasks = scanner.nextInt();
+            scanner.nextLine();  // Consume newline
 
-        for (int i = 0; i < numberOfTasks; i++) {
-            System.out.println("Enter task name:");
-            String taskName = scanner.nextLine();
+            for (int i = 0; i < numberOfTasks; i++) {
+                System.out.println("Enter task name:");
+                String taskName = scanner.nextLine();
 
-            System.out.println("Enter alarm time (format: yyyy-MM-dd HH:mm:ss):");
-            String alarmTimeString = scanner.nextLine();
-            LocalDateTime alarmTime = LocalDateTime.parse(alarmTimeString, formatter);
+                System.out.println("Enter alarm time (format: yyyy-MM-dd HH:mm:ss):");
+                String alarmTimeString = scanner.nextLine();
+                LocalDateTime alarmTime = LocalDateTime.parse(alarmTimeString, formatter);
 
-            alarmManager.addTask(new AlarmTask(taskName, alarmTime));
+                alarmManager.addTask(new AlarmTask(taskName, alarmTime));
+            }
+
+            System.out.println("Alarm tasks have been scheduled.");
+        } finally {
+            scanner.close();
         }
-
-        System.out.println("Alarm tasks have been scheduled.");
     }
 }
