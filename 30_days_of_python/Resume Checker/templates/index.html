@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #ff6f61;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            display: none;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h1 {
+            font-weight: 700;
+            color: #fff;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6f61 0%, #ff9a9e 100%);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #ff9a9e 0%, #ff6f61 100%);
+        }
+        .alert {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+            border: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Upload your Resume/CV</h1>
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="file" class="form-control-file" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </form>
+        <div class="loader" id="loader"></div>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script>
+        const form = document.getElementById('upload-form');
+        const loader = document.getElementById('loader');
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            loader.style.display = 'block';
+            const formData = new FormData(form);
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData,
+            });
+            const result = await response.json();
+            loader.style.display = 'none';
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+            if (result.error) {
+                resultDiv.innerHTML = `<div class="alert alert-danger">${result.error}</div>`;
+            } else {
+                if (result.mistakes.length > 0) {
+                    resultDiv.innerHTML = '<h3>Top 3 Mistakes:</h3><ul class="list-group">';
+                    result.mistakes.forEach(mistake => {
+                        resultDiv.innerHTML += `<li class="list-group-item">${mistake}</li>`;
+                    });
+                    resultDiv.innerHTML += '</ul>';
+                } else {
+                    resultDiv.innerHTML = '<div class="alert alert-success">No mistakes found!</div>';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
