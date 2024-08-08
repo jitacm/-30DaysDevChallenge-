@@ -9,8 +9,12 @@ cap = cv2.VideoCapture(0)
 while True:
     # Read a frame from the video capture
     ret, frame = cap.read()
+    if not ret:
+        break
+    
     # Convert the frame to grayscale
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    
     # Detect faces in the grayscale frame
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
     
@@ -21,10 +25,13 @@ while True:
     # Display the frame with the detected faces
     cv2.imshow('Face Detection', frame)
     
-    # Break the loop if 'q' is pressed
+    # Check for 'q', 'x', or Alt+F4 (handled by window close)
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+    if cv2.getWindowProperty('Face Detection', cv2.WND_PROP_VISIBLE) < 1:
         break
 
 # Release the video capture and close the display window
 cap.release()
 cv2.destroyAllWindows()
+
