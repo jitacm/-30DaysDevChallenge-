@@ -93,9 +93,9 @@ Fee Report System
 6. Exit
 Select an option: 1
 Enter student ID: 101
-Enter student name: John Doe
+Enter student name: Priyant Nikhare
 Enter student course: Computer Science
-Student added successfully.
+The student added successfully.
 ```
 
 ## Contribution
