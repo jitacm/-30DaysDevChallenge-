@@ -123,7 +123,7 @@ git push -u origin <your_branch_name>
 </p>
 
 ## Address: Guman Building, opp. Residency Road, beside Laxmi Sports, Sadar, Nagpur, Maharashtra 440001
- Phone: 9370026086
+ ## Phone: 9370026086
 
 ## Awesome contributors :star_struck:
 <a href="https://github.com/jitacm/-30DaysDevChallenge-/graphs/contributors">
