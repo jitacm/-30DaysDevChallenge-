@@ -30,6 +30,7 @@ __Prerequisites__:
 ├── index.html
 ├── styles.css
 └── app.js
+
 ```
 
 ## JavaScript Functionality
