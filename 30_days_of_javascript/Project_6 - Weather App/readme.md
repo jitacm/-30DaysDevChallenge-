@@ -1,25 +1,25 @@
 # Weather App
-*A simple weather application built with JavaScript that fetches and displays current weather information for a specified city using the OpenWeatherMap API.*
+
+_A comprehensive weather application built with JavaScript that fetches and displays detailed current weather information for a specified city using the OpenWeatherMap API._
 
 ## Features
+
 - Enter the name of a city to get the current weather.
-- Displays temperature, weather condition, and city name.
-- Basic error handling for invalid city names.
+- Displays a wide range of weather information including:
+  - Temperature (current, feels like, min, and max)
+  - Weather condition with detailed description
+  - City name and country
+  - Humidity and atmospheric pressure
+  - Wind speed and direction
+  - Cloudiness percentage
+  - Sunrise and sunset times
+- Enhanced error handling for invalid city names or API issues.
+- Responsive design for better user experience across devices.
 
-# Installation
+## Installation
 
-1. Clone the repository:
+Clone the repository:
+
 ```bash
-  git clone https://github.com/your-username/weather-app.git
-```
-
-2. Navigate to the project directory:
-```bash
-  cd weather-app
-```
-
-3. Install dependencies:
-*If you're using any npm packages, run:*
-```bash
-  npm install
+git clone https://github.com/your-username/weather-app.git
 ```
