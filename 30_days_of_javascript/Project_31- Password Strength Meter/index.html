@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Strength Meter</title>
+  <meta name="description" content="Checks the strength of Password">
+  <meta name="author" content="Supritha">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>Password Strength Meter<br></header>
+    <form action="#">
+      <div class="field">
+        <input id="password" class="input" type="password" placeholder="Type your password">
+        <span class="showBtn">SHOW</span>
+      </div>
+      <!--field-->
+      <div class="indicator">
+        <span class="weak"></span>
+        <span class="medium"></span>
+        <span class="strong"></span>
+      </div>
+      <!--indicator-->
+      <div class="text"></div>
+      <div class="requirements">
+        <p id="lengthReq">Minimum 8 characters</p>
+        <p id="lowercaseReq">At least one lowercase letter</p>
+        <p id="uppercaseReq">At least one uppercase letter</p>
+        <p id="numberReq">At least one number</p>
+        <p id="specialReq">At least one special character</p>
+      </div>
+      <!--requirements-->
+      <div class="field">
+        <input id="confirm-password" class="input" type="password" placeholder="Confirm your password">
+      </div>
+      <div class="confirm-text"></div>
+      <button type="button" class="generateBtn">Generate Strong Password</button>
+    </form>
+  </div>
+  <!--container-->
+  <script src="script.js"></script>
+</body>
+</html>
