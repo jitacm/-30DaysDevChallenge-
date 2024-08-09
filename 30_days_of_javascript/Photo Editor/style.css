@@ -1,0 +1,79 @@
+#imageEditor {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #4b4b4b;
+    border-radius: 8px;
+    background-color: hsl(133, 60%, 27%);
+}
+
+#editorContainer {
+    display: block;
+    overflow: auto;
+    width: 800px;
+    height: 500px;
+}
+
+#editor {
+    display: block;
+    margin: auto;
+}
+
+#toolbar {
+    display: block;
+    margin-right: 50px;
+}
+
+#resizer {
+    border: 2px dashed #000;
+}
+
+#toolbar button {
+    padding: 10px 20px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.text_box {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container {
+    width: 100%;
+    background-color: rgb(140, 145, 118);
+    display: flex;
+    margin: 0 auto;
+}
+
+#resizeSidebar {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#resizeSidebar h3 {
+    margin-bottom: 20px;
+}
+
+#resizeSidebar label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#resizeSidebar input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}

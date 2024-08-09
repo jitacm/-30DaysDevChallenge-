@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image-editor.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+        Photo Editor
+    </nav>
+    <div id="container">
+        <div class="text_box">
+            <div id="imageEditor">
+                <section id="editorContainer">
+                    <canvas id="editor"></canvas>
+                </section>
+            </div>
+            <section id="toolbar">
+                <button id="upload" class="btn btn-success" title="Upload">Upload</button>
+                <button id="save" class="btn btn-danger" title="Save">Save</button>
+                <button id="flipHor" class="btn btn-info" title="Flip Horizontally">Flip Horizontally</button>
+                <button id="flipVert" class="btn btn-info" title="Flip vertically">Flip vertically</button>
+                <button id="rotateL" class="btn btn-info" title="Rotate left">Rotate Left</button>
+                <button id="rotateR" class="btn btn-info" title="Rotate right">Rotate Right</button>
+                <button id="resize" class="btn btn-info" title="Resize">Resize</button>
+                <button id="greyscale" class="btn btn-info" title="Convert to grayscale">Grayscale</button>
+                <button id="adjustBrightness" class="btn btn-warning" title="Adjust Brightness">Brightness</button>
+                <button id="crop" class="btn btn-info" title="Crop">Crop</button>
+                <button id="addText" class="btn btn-info" title="Add Text">Add Text</button>
+                <button id="undo" class="btn btn-secondary" title="Undo">Undo</button>
+                <button id="redo" class="btn btn-secondary" title="Redo">Redo</button>
+                <button id="importURL" class="btn btn-info" title="Import from URL">Import from URL</button>
+                <button id="addWatermark" class="btn btn-info" title="Add Watermark">Watermark</button>
+            </section>
+            <div id="resizeSidebar">
+                <h3>Resize Image</h3>
+                <label for="widthInput">Width:</label>
+                <input type="number" id="widthInput" min="1">
+                <label for="heightInput">Height:</label>
+                <input type="number" id="heightInput" min="1">
+                <button id="applyResize" class="btn btn-primary">Apply</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
