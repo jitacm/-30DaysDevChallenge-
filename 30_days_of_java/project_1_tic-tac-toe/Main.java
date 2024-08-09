@@ -1,76 +1,118 @@
-import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Main {
-    public static void main(String[] args) {
-        char[][] board = new char[3][3];
+public class Main extends JFrame implements ActionListener {
+    private char[][] board;
+    private char currentPlayer;
+    private JButton[][] buttons;
 
-        // Initialize the board with spaces
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[row].length; col++) {
+    public Main() {
+        board = new char[3][3];
+        buttons = new JButton[3][3];
+        currentPlayer = 'X';
+        initializeBoard();
+        createGUI();
+    }
+
+    private void initializeBoard() {
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
                 board[row][col] = ' ';
             }
         }
+    }
 
-        char player = 'X';
-        boolean gameOver = false;
-        Scanner scanner = new Scanner(System.in);
+    private void createGUI() {
+        setTitle("Tic Tac Toe");
+        setSize(400, 400);
+        setLayout(new GridLayout(3, 3));
 
-        while (!gameOver) {
-            printBoard(board);
-            System.out.print("Player " + player + " enter row and column (0-2): ");
-            int row = scanner.nextInt();
-            int col = scanner.nextInt();
-            System.out.println();
-
-            if (row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ') {
-                board[row][col] = player; // Place the player's symbol
-
-                // Check if the current player has won
-                gameOver = haveWon(board, player);
-                if (gameOver) {
-                    System.out.println("Player " + player + " has won!");
-                } else {
-                    // Switch player
-                    player = (player == 'X') ? 'O' : 'X';
-                }
-            } else {
-                System.out.println("Invalid move. Try again!");
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                buttons[row][col] = new JButton(" ");
+                buttons[row][col].setFont(new Font("Arial", Font.PLAIN, 60));
+                buttons[row][col].setFocusPainted(false);
+                buttons[row][col].addActionListener(this);
+                add(buttons[row][col]);
             }
         }
 
-        // Print final board
-        printBoard(board);
-        scanner.close();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
     }
 
-    public static boolean haveWon(char[][] board, char player) {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        JButton buttonClicked = (JButton) e.getSource();
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                if (buttons[row][col] == buttonClicked) {
+                    if (board[row][col] == ' ') {
+                        board[row][col] = currentPlayer;
+                        buttonClicked.setText(String.valueOf(currentPlayer));
+                        if (haveWon(currentPlayer)) {
+                            JOptionPane.showMessageDialog(this, "Player " + currentPlayer + " wins!");
+                            resetBoard();
+                        } else if (isBoardFull()) {
+                            JOptionPane.showMessageDialog(this, "It's a tie!");
+                            resetBoard();
+                        } else {
+                            currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Invalid move. Try again!");
+                    }
+                }
+            }
+        }
+    }
+
+    private boolean haveWon(char player) {
         // Check rows and columns
         for (int i = 0; i < 3; i++) {
             if (board[i][0] == player && board[i][1] == player && board[i][2] == player) {
-                return true; // Row win
+                return true;
             }
             if (board[0][i] == player && board[1][i] == player && board[2][i] == player) {
-                return true; // Column win
+                return true;
             }
         }
 
         // Check diagonals
         if (board[0][0] == player && board[1][1] == player && board[2][2] == player) {
-            return true; // Main diagonal win
+            return true;
         }
         if (board[0][2] == player && board[1][1] == player && board[2][0] == player) {
-            return true; // Anti-diagonal win
+            return true;
         }
 
-        return false; // No win condition met
+        return false;
     }
 
-    public static void printBoard(char[][] board) {
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[row].length; col++) {
-                System.out.print(board[row][col] + " | ");
+    private boolean isBoardFull() {
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                if (board[row][col] == ' ') {
+                    return false;
+                }
             }
-            System.out.println();
         }
+        return true;
+    }
+
+    private void resetBoard() {
+        currentPlayer = 'X';
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                board[row][col] = ' ';
+                buttons[row][col].setText(" ");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        new Main();
     }
 }
