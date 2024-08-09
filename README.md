@@ -110,6 +110,8 @@ git push -u origin <your_branch_name>
 **9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [-30DayDevChallenge-](https://github.com/jitacm/-30DaysDevChallenge-). :v: :heart: 💥
 <br><br>
 
+# Leaderboard 🔥
+**[Tap here to view Leaderboard](https://leadboard-otsw.onrender.com/)**
 
 # Sponsor 🔥
 
@@ -134,3 +136,5 @@ git push -u origin <your_branch_name>
 
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:   
+
+
