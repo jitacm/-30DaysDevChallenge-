@@ -1,21 +1,42 @@
-let speech = new SpeechSynthesisUtterance();
-
+const msg = new SpeechSynthesisUtterance();
 let voices = [];
+const voicesDropdown = document.querySelector('[name="voice"]');
+const options = document.querySelectorAll('[type="range"], [name="text"]');
+const speakButton = document.querySelector("#speak");
+const stopButton = document.querySelector("#stop");
+msg.text = document.querySelector('[name="text"]').value;
 
-let voiceselect = document.querySelector("select");
+function populateVoices() {
+  voices = this.getVoices();
+  voicesDropdown.innerHTML = voices
+    .filter((voice) => voice.lang.includes("en"))
+    .map(
+      (voice) =>
+        `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
+    )
+    .join("");
+}
 
-window.speechSynthesis.onvoiceschanged = () =>{
-    voices = window.speechSynthesis.getVoices();
-    speech.voice = voices[0];
+function setVoice() {
+  msg.voice = voices.find((voice) => voice.name === this.value);
+  toggle();
+}
 
-    voices.forEach((voice , i) => (voiceselect.options[i] = new Option(voice.name , i)))
-};
+function toggle(startOver = true) {
+  speechSynthesis.cancel();
 
-voiceselect.addEventListener("change" , () =>{
-    speech.voice = voices[voiceselect.value];
-});
+  if (startOver) {
+    speechSynthesis.speak(msg);
+  }
+}
 
-document.querySelector("button").addEventListener("click" , ()=>{
-    speech.text = document.querySelector("textarea").value;
-    window.speechSynthesis.speak(speech);
-})
+function setOption() {
+  msg[this.name] = this.value;
+  toggle();
+}
+
+speechSynthesis.addEventListener("voiceschanged", populateVoices);
+voicesDropdown.addEventListener("change", setVoice);
+options.forEach((option) => option.addEventListener("change", setOption));
+speakButton.addEventListener("click", toggle);
+stopButton.addEventListener("click", () => toggle(false));

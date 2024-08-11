@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="root">
+            <h1 class="title">Number System Calculator</h1>
+            <section>
+                <div class="option-group">
+                    <div class="option">
+                        <label for="typeFrom">Convert from:</label>
+                        <select id="typeFrom" onchange="reverse()">
+                            <option value="10">Decimal</option>
+                            <option value="2">Binary</option>
+                            <option value="8">Octal</option>
+                            <option value="16">Hexadecimal</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label for="typeTo">Convert to:</label>
+                        <select id="typeTo" onchange="update()">
+                            <option value="10">Decimal</option>
+                            <option value="2">Binary</option>
+                            <option value="8">Octal</option>
+                            <option value="16">Hexadecimal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="input">Enter {Decimal}:</label>
+                        <input type="text" id="input" value="0" onkeyup="update()">
+                    </div>
+                    <div class="input-field">
+                        <label for="res">Result {Octal}:</label>
+                        <input type="text" id="res" value="0" onkeyup="reverse()">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,20 +1,26 @@
-// server.js
-const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 3000 });
+const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
 
-wss.on('connection', function connection(ws) {
-    console.log('Client connected');
+const app = express();
+const server = http.createServer(app);
+const io = socketIo(server);
 
-    ws.on('message', function incoming(message) {
-        console.log('Received:', message);
-        wss.clients.forEach(function each(client) {
-            if (client !== ws && client.readyState === WebSocket.OPEN) {
-                client.send(message);
-            }
-        });
+app.use(express.static(__dirname));
+
+io.on('connection', (socket) => {
+    console.log('A user connected');
+
+    socket.on('chat message', (msg) => {
+        io.emit('chat message', msg);
     });
 
-    ws.on('close', function() {
-        console.log('Client disconnected');
+    socket.on('disconnect', () => {
+        console.log('A user disconnected');
     });
+});
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
