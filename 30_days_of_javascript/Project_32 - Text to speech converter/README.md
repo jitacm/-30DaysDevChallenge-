@@ -1,27 +1,36 @@
-Here's a README for your text-to-speech converter project:
+# Text-To-Speech Converter
 
-# Text-to-Speech Converter
-
-## Overview
-
-This project is a **Text-to-Speech (TTS) Converter** that allows users to input text into a text box and convert it into speech. The application also provides the option to select different voices, offering a customizable user experience.
+This is a simple web-based Text-To-Speech (TTS) application that allows users to convert typed text into speech using various voices and adjustable parameters such as rate and pitch.
 
 ## Features
 
-- **Text Input**: Easily input any text you want to be converted to speech.
-- **Voice Selection**: Choose from a variety of voices to suit your preference.
-- **Responsive Design**: Works seamlessly across different devices and screen sizes.
+- **Voice Selection**: Choose from a list of available voices on your system.
+- **Adjustable Rate**: Control the speed at which the text is spoken.
+- **Adjustable Pitch**: Modify the pitch of the voice.
+- **Play and Stop**: Start and stop the speech output.
 
-## Technologies Used
+## Project Structure
 
-- **HTML/CSS**: For structuring and styling the interface.
-- **JavaScript**: For handling text input, voice selection, and speech synthesis.
+- **index.html**: The main HTML file that contains the structure of the TTS application.
+- **style.css**: The CSS file for styling the application, ensuring a responsive and visually appealing design.
+- **script.js**: The JavaScript file containing the logic for fetching voices, adjusting speech parameters, and controlling the speech synthesis.
 
-## Usage
+## Getting Started
 
-1. Enter the text you want to convert into speech in the text box.
-2. Select the desired voice from the dropdown menu.
-3. Click on the "Convert to Speech" button to hear the text spoken aloud.
+### Prerequisites
 
+To run this project, you need a modern web browser with support for the Web Speech API.
 
- 
+### Usage
+
+1. Type or paste the text you want to be spoken in the textarea.
+2. Select the desired voice from the dropdown.
+3. Adjust the rate and pitch sliders to your preference.
+4. Click on the "Speak" button to start the speech.
+5. Click on the "Stop" button to stop the speech.
+
+## Built With
+
+- **HTML**: For structuring the web page.
+- **CSS**: For styling the web page.
+- **JavaScript**: For handling the text-to-speech functionality.
