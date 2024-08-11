@@ -1,0 +1,34 @@
+{
+  "name": "ww-wra-google",
+  "version": "1.0.0",
+  "description": "Whatsapp Web bot to query and get results to and from WolframAlpha API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameybhavsar24/ww-wra-google.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "wolframalpha",
+    "google",
+    "api"
+  ],
+  "author": "Bharat Taklikar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameybhavsar24/ww-wra-google/issues"
+  },
+  "homepage": "https://github.com/ameybhavsar24/ww-wra-google#readme",
+  "dependencies": {
+    "dotenv": "^14.3.0",
+    "parse-data-url": "^4.0.1",
+    "pkg-dir": "^8.0.0",
+    "puppeteer": "^23.0.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.25.0"
+  }
+}
