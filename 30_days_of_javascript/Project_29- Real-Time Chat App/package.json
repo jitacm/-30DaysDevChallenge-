@@ -1,0 +1,16 @@
+{
+  "name": "30_days_of_javascript",
+  "version": "1.0.0",
+  "description": "![WhatsApp Image 2024-05-31 at 23 46 36_56ac45ef](https://github.com/jitacm/-30DaysDevChallenge-/assets/163456457/d2cdc37e-5fac-4c40-8b1f-6a88f68d8212)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
