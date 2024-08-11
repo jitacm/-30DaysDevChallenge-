@@ -65,7 +65,6 @@ The ATM Simulation System is a console-based Java application that simulates the
 ## Code Structure
 
 - **`ATMSimulationSystem.java`**: The main class that handles user interactions and performs ATM operations.
-- **`Account.java`**: The class representing user accounts with methods for managing balance and transaction history.
 
 ## Contributing
 
