@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Emoji Generator</h1>
+        <div class="emoji-container">
+            <div id="emoji" class="emoji"></div>
+            <p id="emoji-name" class="emoji-name"></p>
+        </div>
+        <div class="feeling-buttons">
+            <button class="btn feeling-button" data-feeling="Happy">Happy</button>
+            <button class="btn feeling-button" data-feeling="Sad">Sad</button>
+            <button class="btn feeling-button" data-feeling="Angry">Angry</button>
+            <button class="btn feeling-button" data-feeling="Excited">Excited</button>
+        </div>
+        <button id="generate-random-btn" class="btn generate-random-button">Generate Random Emoji</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
