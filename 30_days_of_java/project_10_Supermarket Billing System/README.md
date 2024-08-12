@@ -53,8 +53,8 @@ Supermarket Billing System
 4. Exit
 Choose an option: 1
 Enter item name: Apple
-Enter item price: 0.99
-Enter item quantity: 3
+Enter item price: 60
+Enter item quantity: 6
 Item added to cart.
 ```
 
