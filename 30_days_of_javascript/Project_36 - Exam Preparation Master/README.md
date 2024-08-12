@@ -1,67 +1,57 @@
-ExamPrep
+## Exam Prep Master
 
-Overview : 
-The ExamPrep is a web application designed to provide users with an interactive platform to test their knowledge on various subjects. Built using the MERN stack (MongoDB, Express.js, React, Node.js), the app offers a seamless user experience with responsive design, real-time scoring, and integration of animated elements.
+Exam Prep Master is an online platform designed to help students prepare for exams by providing a variety of practice quizzes and tracking their performance over time. This repository contains the  for the application, which is built using Node.js, Express, and MongoDB.
 
+## Features
+User Authentication:
 
+Secure user registration and login with password encryption using bcrypt.
 
-A . Technologies Used : 
+## Score Tracking:
 
-Frontend: React.js, React Router
+Track user scores for different subjects (e.g., Math, Science) and difficulty levels (easy, medium, hard).
+Store and update the best scores for each user.
 
-Backend: Node.js, Express.js
+## User Data Management:
 
-Database: MongoDB
+Retrieve individual user details by username.
+Fetch all users' data for administrative purposes.
 
-Others: CSS (Tailwind CSS), Lordicon for animations
+## Password Management:
 
+Update user passwords with secure hashing.
 
+## Getting Started
+## Prerequisites
+Node.js installed on your machine.
+MongoDB database setup.
+A .env file with the following environment variables:
+ 
+MONGO_URL=<your-mongodb-url>
+PORT=<your-preferred-port>
+## Installation
+Clone this repository:
+ 
+git clone 
 
-B . Features : 
+## Navigate to the project directory:
+ 
+cd exam-prep-master
+## Install the required dependencies:
+ 
+npm install 
 
+## Running the Application
+Start the server with the following command:
 
-1 . User Authentication and Authorization - 
+ 
+npm run dev
+The server will run on http://localhost:<your-port>.
 
-Signup: Users can create new accounts by providing necessary details.
-
-Login: Existing users can authenticate themselves using credentials.
-
-Logout: Provides an option to securely log out of the application.
-
-
-2 . Quiz Functionality - 
-
-Quiz Setup: Users can select a subject and difficulty level to start a quiz.
-
-Question Display: Displays questions with multiple-choice answers.
-
-Answer Submission: Allows users to select answers and submit them.
-
-Scoring: Calculates and displays scores based on correct and incorrect answers.
-
-Result Display: Shows a summary of the quiz results including correct answers, incorrect answers, and questions not attempted.
-
-
-3 . Profile Management - 
-
-View Profile: Users can view their profile information, including username and best scores.
-
-4 . Responsive Design
-
-Mobile and Desktop Compatibility: Ensures the application is accessible and functional across different devices and screen sizes.
-
-CSS Framework: Utilizes Tailwind CSS for styling, ensuring a responsive and visually appealing interface.
-
-
-C . Backend Integration : 
-
-RESTful APIs: Integrates with backend services using REST APIs for data retrieval and storage.
-
-Database Integration: Stores user profiles and quiz data in MongoDB, ensuring data persistence and retrieval.
-
-
-D . Interactive Elements : 
-
-Animations: Utilizes Lordicon for animated icons, enhancing user interface interactivity.
-
-Hover Effects: Implements CSS hover effects for buttons and links to improve user experience.
+## API Endpoints
+POST /signup: Register a new user.
+POST /login: Authenticate a user and retrieve their username.
+PUT /update-password: Update a user's password.
+PUT /update-score: Update a user's best score for a subject and difficulty level.
+GET /users/:username: Get details of a user by username.
+GET /users: Retrieve details of all users.
