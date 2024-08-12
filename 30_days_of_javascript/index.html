@@ -3,28 +3,1823 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Code Editor</title>
+    <title>AMAZON CLONE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <label><i class="fa-brands fa-html5"></i>HTML</label>
-            <textarea id="html-code" onkeyup="run()"></textarea>
+<header>
+    
+<!-- navbar -->
+<div class="navbar">
+    <div class="nav_logo border">
+        <a href="#">
+            <div 
+          class="logo">
+            </div>
+        </a>
+    </div>
 
-            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
-            <textarea id="css-code" onkeyup="run()"></textarea>
 
-            <label><i class="fa-brands fa-js"></i>JavaScript</label>
-            <textarea id="js-code" onkeyup="run()"></textarea>
+<!-- navaddress -->
+<div class="nav_address border">
+      <p class="add_first">Deliver to</p>
+         <div class="add_icon">
+        <i class="fa-solid fa-location-dot"></i>
+      <p class="add_second">india</p>
+</div>
+</div> 
+
+
+<!-- navsearch bar -->
+<div class="nav_search">
+    <select class="select_all">
+        <option>All</option>
+    </select>
+    <input placeholder="Search Amazon" class="search_box">
+    <div class="search_icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+</div>
+
+<!-- navcountry -->
+<div class="nav_america border" >
+    <div class="englishflag"></div>
+    EN
+</div>
+
+<!--navsignin -->
+<div class="nav_signin border">
+<p>
+    <span>hello,sign in</span>
+</p>
+<p class="nav_one">Account & Lists</p>
+</div>
+
+<div class="nav_signin border">
+    <p>
+        <span>Returns</span>
+    </p>
+    <p class="nav_one">& Orders</p>
+    </div>
+
+
+<!-- navcart -->
+<div class="nav_cart border">
+
+    <i class="fa-solid fa-cart-shopping"></i>    
+    Cart
+
+</div>
+</div>  
+
+<!-- panel -->
+<div class="panel">
+    <div class="panelicon border">
+        <i class="fa-solid fa-bars"></i>       
+         <p class="mainupanel">All</p>
+    </div>
+
+    <div class="panel_options">
+        <a class="option1 border">Today's Deal</a>
+        <a class="option2 border">Customer Service</a>
+        <a class="option3 border">Registry</a>
+        <a class="option4 border">Gift Cards</a>
+        <a class="option5 border">Sell</a>
+    </div>
+</div>
+</header> 
+
+<!-- hero section -->
+<div class="hero_section">
+<div class="hero_section_info">
+    You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+     <a href="https://www.amazon.in/" class="amazoninweb" target="_main">Click here to go to amazon.in</a>
+</div>
+</div>
+
+<!-- shop section 1 -->
+
+<div class="shop_section1">
+
+
+<!-- box1 -->
+<div class="box1">
+        <h3 class="headingbox1">Gaming accessories
+        </h3>
+    <br>
+<img src="photos/headsetbox1.jpg" alt="headset" class="headsetbox1">
+<br>
+<span class="productname_box1">Headsets</span>
+<br>
+
+<img src="photos/keyboardbox1.jpg" alt="keyboard" class="keyboardbox1">
+<span class="productname2_box1">keyboards</span>
+<br>
+
+<img src="photos/micebox1.jpg" alt="mouse" class="micebox1">
+<br>
+<span class="productname3_box1">Computer mice</span>
+<br>
+
+<img src="photos/chairbox1.jpg" alt="chair" class="chairbox1">
+<span class="productname4_box1">Chairs</span>
+
+<a href="#" class="link_box1 orange">See more</a>
+</div>  
+
+ <!-- box2 -->
+ <div class="box2">
+    <h3 class="headingbox2">New year, new supplies</h3>
+    <div class="box2_img" style="background-image: url('photos/imgbox2.jpg');"></div>
+
+    <a href="#" class="link_box2  orange">Shop office products</a>
+</div>  
+
+<!-- box3 -->
+<div class="box3">
+    <h3 class="headingbox3">Deals in PCs</h3>
+    <div class="box3_img" style="background-image: url('photos/imgbox3.jpg');"></div>
+
+    <a href="#" class="link_box3  orange">Shop now</a>
+</div>
+
+<!-- box4 -->
+<div class="box4">
+    <h3 class="headingbox1">Refresh your space
+    </h3>
+    <br>
+
+    <img src="photos/dining1_box4.jpg"class="diningbox4">
+    <br>
+    <span class="productname1_box4">Dining</span>
+    <br>
+    
+    <img src="photos/home2_box4.jpg"class="home2box4">
+    <span class="productname2_box4">Home</span>
+    <br>
+    
+    <img src="photos/kitchen3_box4.jpg"class="kitchenbox4">
+    <br>
+    <span class="productname3_box4">Kitchen</span>
+    <br>
+    
+    <img src="photos/health and beauty4_box4.jpg" class="cosmaticsbox4">
+    <span class="productname4_box4">health and beauty</span>
+    
+    <a href="#" class="link_box4 orange">See more</a>
+    </div>
+    </div>
+
+
+<!-- section two -->
+
+<div class="shop_section2">
+
+<!-- box1_s2 -->
+    <div class="box1_sec2">
+        <h3 class="headingbox1_sec2">Toys under $25</h3>
+        <div class="box1_sec2_img" style="background-image: url('photos/box1_sec2.jpg');"></div>
+        <a href="#" class="link_box1_sec2 orange">Shop now</a>
+    </div>  
+
+
+<!-- box2_s2 -->
+    <div class="box2_sec2">
+        <h3 class="headingbox2_sec2">Top Deal</h3>
+
+        <div class="box2_sec2_img" style="background-image: url('photos/box2_sec2.jpg');"></div>
+
+        <div class="offer_box2_s2">
+            <span>
+            Up to 54% off
+            </span> 
         </div>
-        <div class="right">
-            <label><i class="fa-solid fa-play"></i>Output</label>
-            <iframe id="output"></iframe>
+
+        <div class="promote_offer_box2_s2">
+            Top deal
+        </div>
+
+        <div class="offer_product">
+            <span>
+               LISEN Car mount, phone, Tablet stand
+            </span>
+        </div>
+        
+        <a href="#" class="link_box2_sec2 orange">See all deals</a>
+    </div>  
+
+
+<!-- box3_s2 -->
+    <div class="box3_sec2">
+        <h3 class="headingbox3_sec2">Lunar new year</h3>
+        <div class="box3_sec2_img" style="background-image: url('photos/box3_sec2.jpg');"></div>
+        <a href="#" class="link_box2_sec2 orange">Shop now</a>
+    </div>  
+
+<!-- box4_s2 -->
+    <div class="box4_sec2">
+        <h3 class="headingbox4_sec2">Lunar new year</h3>
+        <div class="box4_sec2_img" style="background-image: url('photos/box4_sec2.jpg');"></div>
+        <a href="#" class="link_box4_sec2 orange">Shop now</a>
+    </div>  
+    </div>
+
+
+<!--section3 -->
+
+<div class="shop_section3">
+
+<!-- scroll_section1 -->
+<div class="scroll_section1">
+
+<div class="heading_box1_sec3">
+Best Sellers in Kitchen & dinigs
+</div>
+
+<div class="box1_sec3">
+
+ <img src="photos/box1_sec3_img1.jpg" alt="1" class="box1_sec3_img1">
+
+<img src="photos/box1_sec3_img2.jpg" alt="2" class="box1_sec3_img2">
+
+<img src="photos/box1_sec3_img3.jpg" alt="3" class="box1_sec3_img3">
+
+<img src="photos/box1_sec3_img4.jpg" alt="4" class="box1_sec3_img4">
+
+<img src="photos/box1_sec3_img5.jpg" alt="5" class="box1_sec3_img5">
+
+<img src="photos/box1_sec3_img6.jpg" alt="6" class="box1_sec3_img6">
+
+<img src="photos/box1_sec3_img7.jpg" alt="7" class="box1_sec3_img7">
+
+<img src="photos/box1_sec3_img8.jpg" alt="8" class="box1_sec3_img8"> 
+
+<img src="photos/box1_sec3_img9.jpg" alt="9" class="box1_sec3_img9"> 
+
+<img src="photos/box1_sec3_img10.jpg" alt="10" class="box1_sec3_img10"> 
+
+<img src="photos/box1_sec3_img11.jpg" alt="11" class="box1_sec3_img11"> 
+
+<img src="photos/box1_sec3_img12.jpg" alt="12" class="box1_sec3_img12"> 
+
+<img src="photos/box1_sec3_img13.jpg" alt="13" class="box1_sec3_img13"> 
+
+<img src="photos/box1_sec3_img14.jpg" alt="14" class="box1_sec3_img14"> 
+
+<img src="photos/box1_sec3_img15.jpg" alt="15" class="box1_sec3_img15"> 
+
+<img src="photos/box1_sec3_img16.jpg" alt="16" class="box1_sec3_img16"> 
+</div>
+</div>
+
+<div class="space_section"></div>
+
+<!-- scroll_section2 -->
+<div class="scroll_section2">
+
+    <div class="heading_box2_sec3">
+    Best Sellers in Books
+    </div>
+    
+    <div class="box2_sec3">
+    
+    
+     <img src="photos/box2_sec3_img1.jpg" alt="1" class="box2_sec3_img1">
+    
+    <img src="photos/box2_sec3_img2.jpg" alt="2" class="box2_sec3_img2">
+
+    <img src="photos/box2_sec3_img3.jpg" alt="3" class="box2_sec3_img3">
+
+    <img src="photos/box2_sec3_img4.jpg" alt="4" class="box2_sec3_img4">
+  
+    <img src="photos/box2_sec3_img5.jpg" alt="5" class="box2_sec3_img5">
+
+    <img src="photos/box2_sec3_img6.jpg" alt="6" class="box2_sec3_img6">
+    
+    <img src="photos/box2_sec3_img7.jpg" alt="7" class="box2_sec3_img7">
+
+    <img src="photos/box2_sec3_img8.jpg" alt="8" class="box2_sec3_img8"> 
+     
+    <img src="photos/box2_sec3_img9.jpg" alt="9" class="box2_sec3_img9">
+      
+    <img src="photos/box2_sec3_img10.jpg" alt="10" class="box2_sec3_img10"> 
+   
+    <img src="photos/box2_sec3_img11.jpg" alt="11" class="box2_sec3_img11"> 
+      
+    <img src="photos/box2_sec3_img12.jpg" alt="12" class="box2_sec3_img12"> 
+
+
+</div>
+</div>
+</div>
+<!-- 
+<div class="space_section"></div> -->
+
+<!-- section4 -->
+<div class="shop_section4">
+
+
+        <!-- box1_s4 -->
+            <div class="box1_sec4">
+                <h3 class="headingbox1_sec4">Shop activity trackers and smartwatches
+                </h3>
+                <div class="box1_sec4_img" style="background-image: url('photos/box1_sec4.jpg');"></div>
+                <a href="#" class="link_box1_sec4 orange">Shop now</a>
+            </div>  
+
+
+            <!-- box2_s4 -->
+            <div class="box2_sec4">
+
+                <h3 class="headingbox2_sec4">
+                Gaming merchandise
+                </h3>
+                
+                <img src="photos/box2_sec4_img1.jpg"  class="box2_sec4_img1">
+                <br>
+                <span class="productname1_box2">Apparel</span>
+                <br>
+
+                <img src="photos/box2_sec4_img2.jpg"  class="box2_sec4_img2">
+                <span class="productname2_box2">Hat</span>
+                <br>
+
+                <img src="photos/box2_sec4_img3.jpg"  class="box2_sec4_img3">
+                <br>
+                <span class="productname3_box2">Action figure</span>
+                <br>
+
+                <img src="photos/box2_sec4_img4.jpg" class="box2_sec4_img4">
+                <span class="productname4_box2">Mugs</span>
+
+                <a href="#" class="link_box2_sec4 orange">See more</a>
+                </div>  
+
+
+                <!-- box3_s4 -->
+            <div class="box3_sec4">
+                <h3 class="headingbox3_sec4">
+                 Player's paradise starts here
+                </h3>
+                <div class="box3_sec4_img" style="background-image: url('photos/box3_sec4.jpg');"></div>
+                <a href="#" class="link_box3_sec4 orange">Shop video games</a>
+            </div>  
+
+
+            <!-- box4_s4 -->
+            <div class="box4_sec4">
+                <h3 class="headingbox1_sec4">
+                    A whole new way to work
+                </h3>
+                <div class="box4_sec4_img" style="background-image: url('photos/box4_sec4.jpg');"></div>
+                <a href="#" class="link_box4_sec4 orange">Shop personal computers</a>
+            </div>   
+</div>
+
+<!-- shop_section5 -->
+<div class="shop_section5">
+
+    <!-- scroll_section1 -->
+    <div class="scroll_section1">
+    
+    <div class="heading_box1_sec5">
+        Best Sellers in Sports & Outdoors
+    </div>
+    
+    <div class="box1_sec5">
+    
+    <img src="photos/box1_sec5_img1.jpg" alt="1" class="box1_sec5_img1">
+    
+    <img src="photos/box1_sec5_img2.jpg" alt="2" class="box1_sec5_img2"> 
+
+    <img src="photos/box1_sec5_img3.jpg" alt="3" class="box1_sec5_img3">
+    
+    <img src="photos/box1_sec5_img4.jpg" alt="4" class="box1_sec5_img4">
+
+    <img src="photos/box1_sec5_img5.jpg" alt="5" class="box1_sec5_img5">
+    
+    <img src="photos/box1_sec5_img6.jpg" alt="6" class="box1_sec5_img6">
+    
+    <img src="photos/box1_sec5_img7.jpg" alt="7" class="box1_sec5_img7"> 
+    
+    <img src="photos/box1_sec5_img8.jpg" alt="8" class="box1_sec5_img8"> 
+    
+     <img src="photos/box1_sec5_img9.jpg" alt="9" class="box1_sec5_img9"> 
+
+    </div>
+    </div>
+    
+    <div class="space_section"></div>
+    
+    <div class="scroll_section2_deal">
+    
+        <div class="heading_box2_sec5">
+        Deals Under $25
+        <span</a href="#" class="link_deal1 orange">see more</a>
+        </span>
+        </div>
+        
+        <!-- first deal -->
+        <div class="box2_sec5">
+        
+        <div class="deal1"> 
+            <img src="photos/box2_sec5_img1.jpg" alt="1"
+            class="box2_sec5_img1">
+        </div>
+
+        <div class="off_deal1_box2_s5">
+            <span>
+             41% off
+            </span> 
+        </div>
+
+        <div class="deal1_bold">
+            <span>
+                Deal
+            </span>
+        </div>
+
+          <!-- about_deal1 -->
+         <div class="best_price_deal1"> 
+            <span class="dollar_deal1">
+               $ 
+            </span>
+
+               <div class="rate_deal1">
+                <h2>23.70</h2>
+               </div>
+
+               <span class="list_price_deal1">
+                List price:
+                </span>
+
+                <span class="line_through_deal1">$39.99</span>
+
+                 <span class="productname1_box2_deal1">
+                    The C. S. Lewis Signature Classics..
+                 </span> 
+
+        </div> 
+       
+
+        <!-- second deal -->
+        <div class="deal2"> 
+            <img src="photos/box2_sec5_img2.jpg" alt="2"
+            class="box2_sec5_img2">
+        </div>
+
+        <div class="off_deal2_box2_s5">
+            <span>
+             32% off 
+            </span> 
+        </div>
+
+        <div class="deal2_bold">
+            <span>
+                Deal
+            </span>
+        </div>
+
+          <!-- about_deal2 -->
+         <div class="best_price_deal2"> 
+            <span class="dollar_deal2">
+               $ 
+            </span>
+
+               <div class="rate_deal2">
+                <h2>16.87</h2>
+               </div>
+
+               <span class="list_price_deal2">
+                List price:
+                </span>
+
+                <span class="line_through_deal2">$24.99</span>
+
+                 <span class="productname2_box2_deal2">
+                    Dear Black Girls: How to Be True to..
+                 </span> 
+
+        </div> 
+    
+        <!-- third deal -->
+        <div class="deal3"> 
+            <img src="photos/box2_sec5_img3.jpg" alt="3"
+            class="box2_sec5_img2">
+        </div>
+
+        <div class="off_deal3_box2_s5">
+            <span>
+             16% off 
+            </span> 
+        </div>
+
+        <div class="deal3_bold">
+            <span>
+                Deal
+            </span>
+        </div>
+
+          <!-- about_deal3 -->
+         <div class="best_price_deal3"> 
+            <span class="dollar_deal3">
+               $ 
+            </span>
+
+               <div class="rate_deal3">
+                <h2>9.00</h2>
+               </div>
+
+               <span class="list_price_deal3">
+                List price:
+                </span>
+
+                <span class="line_through_deal3"> $10.69</span>
+
+                 <span class="productname3_box2_deal3">
+                 OGX Extra Strength Refreshing+..
+                 </span> 
+
+        </div> 
+    
+
+<!-- fourth deal -->
+<div class="deal4"> 
+    <img src="photos/box2_sec5_img4.jpg" alt="4"
+    class="box2_sec5_img4">
+</div>
+
+<div class="off_deal4_box2_s5">
+    <span>
+     20% off 
+    </span> 
+</div>
+
+<div class="deal4_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal4 -->
+ <div class="best_price_deal4"> 
+    <span class="dollar_deal4">
+       $ 
+    </span>
+
+       <div class="rate_deal4">
+        <h2>23.14</h2>
+       </div>
+
+       <span class="list_price_deal4">
+        List price:
+        </span>
+
+        <span class="line_through_deal4"> $28.99</span>
+
+         <span class="productname4_box2_deal4">
+         Outofshapeworthlessloser: A Memoir..
+         </span> 
+
+</div> 
+
+
+<!-- fifth deal -->
+<div class="deal5"> 
+    <img src="photos/box2_sec5_img5.jpg" alt="5"
+    class="box2_sec5_img5">
+</div>
+
+<div class="off_deal5_box2_s5">
+    <span>
+     20% off 
+    </span> 
+</div>
+
+<div class="deal5_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal5 -->
+ <div class="best_price_deal5"> 
+    <span class="dollar_deal5">
+       $ 
+    </span>
+
+       <div class="rate_deal5">
+        <h2>23.99</h2>
+       </div>
+
+       <span class="list_price_deal5">
+        List price:
+        </span>
+
+        <span class="line_through_deal5"> $29.99</span>
+
+         <span class="productname5_box2_deal5">
+        It Is Finished: A 40-Day Pilgrimage..
+         </span> 
+
+</div> 
+
+
+<!-- sixth deal -->
+<div class="deal6"> 
+    <img src="photos/box2_sec5_img6.jpg" alt="6"
+    class="box2_sec5_img6">
+</div>
+
+<div class="off_deal6_box2_s5">
+    <span>
+     20% off 
+    </span> 
+</div>
+
+<div class="deal6_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal6 -->
+ <div class="best_price_deal6"> 
+    <span class="dollar_deal6">
+       $ 
+    </span>
+
+       <div class="rate_deal6">
+        <h2>15.99</h2>
+       </div>
+
+       <span class="list_price_deal6">
+        List price:
+        </span>
+
+        <span class="line_through_deal6"> $19.99</span>
+
+         <span class="productname6_box2_deal6">
+            I Want God: How to Love Him with Y..
+         </span> 
+
+</div> 
+
+<!-- seventh deal -->
+<div class="deal7"> 
+    <img src="photos/box2_sec5_img7.jpg" alt="7"
+    class="box2_sec5_img7">
+</div>
+
+<div class="off_deal7_box2_s5">
+    <span>
+    20% off 
+    </span> 
+</div>
+
+<div class="deal7_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal7 -->
+ <div class="best_price_deal7"> 
+    <span class="dollar_deal7">
+       $ 
+    </span>
+
+       <div class="rate_deal7">
+        <h2>24.00</h2>
+       </div>
+
+       <span class="list_price_deal7">
+        List price:
+        </span>
+
+        <span class="line_through_deal7"> $30.00</span>
+
+         <span class="productname6_box2_deal7">
+            Burma Sahib: A Novel
+        </span> 
+
+</div> 
+
+
+<!-- eighth deal -->
+<div class="deal8"> 
+    <img src="photos/box2_sec5_img8.jpg" alt="8"
+    class="box2_sec5_img8">
+</div>
+
+<div class="off_deal8_box2_s5">
+    <span>
+    25% off 
+    </span> 
+</div>
+
+<div class="deal8_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal8 -->
+ <div class="best_price_deal8"> 
+    <span class="dollar_deal8">
+       $ 
+    </span>
+
+       <div class="rate_deal8">
+        <h2>18.64</h2>
+       </div>
+
+       <span class="list_price_deal8">
+        List price:
+        </span>
+
+        <span class="line_through_deal8"> $24.99</span>
+
+         <span class="productname8_box2_deal8">
+         Crochet Amigurumi for Every Occa..
+        </span> 
+
+</div> 
+
+
+
+<!-- ninth deal -->
+<div class="deal9"> 
+    <img src="photos/box2_sec5_img9.jpg" alt="9"
+    class="box2_sec5_img9">
+</div>
+
+<div class="off_deal9_box2_s5">
+    <span>
+    14% off 
+    </span> 
+</div>
+
+<div class="deal9_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+  <!-- about_deal9 -->
+ <div class="best_price_deal9"> 
+    <span class="dollar_deal9">
+       $ 
+    </span>
+
+       <div class="rate_deal9">
+        <h2>20.72</h2>
+       </div>
+
+       <span class="list_price_deal9">
+        List price:
+        </span>
+
+        <span class="line_through_deal9"> $28.94</span>
+
+         <span class="productname9_box2_deal9">
+        Aveeno Baby Welcome little one g..
+        </span> 
+
+</div> 
+</div>
+
+<!-- tenth deal
+ <div class="deal10"> 
+    <img src="box2_sec5_img10.jpg" alt="10"
+    class="box2_sec5_img10">
+</div>
+
+<div class="off_deal10_box2_s5">
+    <span>
+    25% off 
+    </span> 
+</div>
+
+<div class="deal10_bold">
+    <span>
+        Deal
+    </span>
+</div>
+
+    about_deal10  
+     <div class="best_price_deal10"> 
+    <span class="dollar_deal10">
+       $ 
+    </span>
+
+       <div class="rate_deal10">
+        <h2>18.44</h2>
+       </div>
+
+       <span class="list_price_deal10">
+        List price:
+        </span>
+
+        <span class="line_through_deal10"> $24.99</span>
+
+         <span class="productname10_box2_deal10">
+        Funko Disney/Pixar Cars Launch..
+        </span> 
+
+    </div> -->   
+</div>
+</div>
+
+<!-- shop section 6 -->
+<div class="shop_section6">
+
+    <!-- box1 -->
+    <div class="box1_sec6">
+        <h3 class="headingbox1_sec6">Warm & welcoming decor
+        </h3>
+        <br>
+    
+        <img src="photos/box1_sec6_img1.jpg"class="box1_sec6_img1">
+        <br>
+        <span class="productname1_box1_s6">wreaths & Garlands</span>
+        <br>
+        
+        <img src="photos/box1_sec6_img2.jpg"class="box1_sec6_img2">
+        <span class="productname2_box1_s6">Outdoor decor</span>
+        <br>
+        
+        <img src="photos/box1_sec6_img3.jpg"class="box1_sec6_img3">
+        <br>
+        <span class="productname3_box1_s6">Pillows & Throws</span>
+        <br>
+        
+        <img src="photos/box1_sec6_img4.jpg" class="box1_sec6_img4">
+        <span class="productname4_box1_s6">Wallarts and mirrors</span>
+        
+        <a href="#" class="link_box1_s6 orange"> fall finds</a>
+     
+    </div> 
+
+<!--box2_s6>-->
+
+<div class="box2_s6">
+    <h3 class="headingbox2_sec6">Creating business solutions</h3>
+    <div class="box2_sec6_img" style="background-image: url('photos/box2_sec6_img.jpg');"></div>
+
+    <a href="#" class="link_box2_s6  orange">See more software products</a>
+</div> 
+
+
+
+<!-- box3_s6 -->
+<div class="box3_s6">
+    <h3 class="headingbox3_sec6">Laptops for every need</h3>
+    <div class="box3_sec6_img" style="background-image: url('photos/box3_sec6_img.jpg');"></div>
+    <a href="#" class="link_box3_s6  orange">Find your laptops here</a>
+</div> 
+
+<!-- box4_s6 -->
+
+<div class="box4_s6">
+    <h3 class="headingbox4_sec6">Personal Care under $25</h3>
+    <div class="box4_sec6_img" style="background-image: url('photos/box4_sec6_img.jpg');"></div>
+    <a href="#" class="link_box3_s6  orange">See more</a>
+</div> 
+</div>
+
+<!-- shop section 7 -->
+
+<div class="shop_section7">
+
+    <!-- scroll_section1_s7 -->
+
+    <div class="scroll_section1">
+
+        <div class="heading_box1_sec7">
+            Best Sellers in Beauty & Personal Care
+        </div>
+        
+        <div class="box1_sec7">
+        
+         <img src="photos/box1_sec7_img1.jpg" alt="1" class="box1_sec7_img1">
+        
+        <img src="photos/box1_sec7_img2.jpg" alt="2" class="box1_sec7_img2">
+        
+        <img src="photos/box1_sec7_img3.jpg" alt="3" class="box1_sec7_img3">
+        
+        <img src="photos/box1_sec7_img4.jpg" alt="4" class="box1_sec7_img4">
+        
+        <img src="photos/box1_sec7_img5.jpg" alt="5" class="box1_sec7_img5">
+        
+        <img src="photos/box1_sec7_img6.jpg" alt="6" class="box1_sec7_img6">
+        
+        <img src="photos/box1_sec7_img7.jpg" alt="7" class="box1_sec7_img7">
+        
+        <img src="photos/box1_sec7_img8.jpg" alt="8" class="box1_sec7_img8"> 
+        
+        <img src="photos/box1_sec7_img9.jpg" alt="9" class="box1_sec7_img9"> 
+        
+        <img src="photos/box1_sec7_img10.jpg" alt="10" class="box1_sec7_img10"> 
+        
+        <img src="photos/box1_sec7_img11.jpg" alt="11" class="box1_sec7_img11"> 
+        
+        <img src="photos/box1_sec7_img12.jpg" alt="12" class="box1_sec7_img12"> 
+
+        </div>
+
+    </div>
+
+<!-- scroll_section2_s7 -->
+<div class="space_section"></div>
+
+<div class="scroll_section2">
+
+    <div class="heading_box2_sec3">
+     Most wished for in Movies & TV
+    </div>
+    
+    <div class="box2_sec7">
+    
+     <img src="photos/box2_sec7_img1.jpg" alt="1" class="box2_sec7_img1">
+    
+    <img src="photos/box2_sec7_img2.jpg" alt="2" class="box2_sec7_img2">
+
+    <img src="photos/box2_sec7_img3.jpg" alt="3" class="box2_sec7_img3">
+
+    <img src="photos/box2_sec7_img4.jpg" alt="4" class="box2_sec7_img4">
+  
+    <img src="photos/box2_sec7_img5.jpg" alt="5" class="box2_sec7_img5">
+
+    <img src="photos/box2_sec7_img6.jpg" alt="6" class="box2_sec7_img6">
+    
+    <img src="photos/box2_sec7_img7.jpg" alt="7" class="box2_sec7_img7">
+
+    <img src="photos/box2_sec7_img8.jpg" alt="8" class="box2_sec7_img8"> 
+     
+    <img src="photos/box2_sec7_img9.jpg" alt="9" class="box2_sec7_img9">
+      
+    <img src="photos/box2_sec7_img10.jpg" alt="10" class="box2_sec7_img10"> 
+   
+    <img src="photos/box2_sec7_img11.jpg" alt="11" class="box2_sec7_img11"> 
+      
+    <img src="photos/box2_sec7_img12.jpg" alt="12" class="box2_sec7_img12"> 
+      
+    
+    </div>
+
+</div>
+</div>
+
+<!-- shop section 8 -->
+<div class="shop_section8">
+
+    <div class="history_views">
+
+    <span class="heading_sec8"> <h2>Customers who viewed items in your browsing history also viewed</h2></span>
+
+    <div class="box_sec8">
+
+    <div class="sec8_img1_infobox">
+
+    <div class="sec8_img1">
+    <img src="photos/sec8_img1.jpg" alt="1">
+    </div>
+
+    <span>
+        <a class="link1_sec8 orange" href="https://shorturl.at/gqsxT">Yinqing Cat Valentines Day Card, Lights and Music Valentines Day Cards for Her Him, 3D Pop Up anni..</a>
+    </span>
+
+    <span class="star_rating1">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+    </span>
+    
+    <span class="outoff_rate1 orange">36</span>
+
+    <div class="history_views1">600+ viewed in past month</div>
+
+    <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+    <span class="price1_sec8">14.99</span>
+    <br>
+    <div class="about1_sec8" style="font-size: 12px;">FREE shipping by amazon</div>
+
+</div>
+    
+
+<!-- infobox2 -->
+<div class="sec8_img2_infobox">
+
+        <div class="sec8_img2">
+        <img src="photos/sec8_img2.jpg" alt="2">
+        </div>
+    
+        <span>
+            <a class="link2_sec8 orange" href="https://shorturl.at/bdSX8">6 Pairs Valentine's Day Socks Couple Heart Crew Socks Novelty Funky Red Lips Pattern Casual Crew Socks for Valentine's Day...</a>
+        </span>
+    
+        <span class="star_rating2">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+        </span>
+        
+        <span class="outoff_rate2 orange">63</span>
+        
+        <div>
+        <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+        <span class="price2_sec8">13.59</span>
+        </div>
+
+        <div 
+        class="about2_sec8" style="font-size: 12px;">FREE shipping by amazon Only 1 left in stock - order...
+        </div>
+
+</div>
+
+<!-- infobox3 -->
+<div class="sec8_img3_infobox">
+
+        <div class="sec8_img3">
+        <img src="photos/sec8_img3.jpg" alt="3">
+        </div>
+    
+        <span>
+            <a class="link3_sec8 orange" href="https://shorturl.at/dCOX7">By 22CRAFT - Pop Up Valentines Day Card, Love Cat Valentines Cards, Pop Up Birthday Cards For wo...</a>
+        </span>
+    
+        <span class="star_rating3">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        </span>
+        
+        <span class="outoff_rate3 orange">200</span>
+
+        <div class="history_views3">2k+ viewed in past month</div>
+        
+        <div>
+        <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+        <span class="price2_sec8">11.59</span>
+        </div>
+
+        <br>
+        <div class="amazon_choice_s8">
+        Amazon's 
+        <span class="choice_sec8">Choice</span>
+        </div>
+
+        <span style="position: relative; left: 110px; bottom: 30px;">in</span>
+        <span style="position:relative; bottom: 10px;right: 10px;">Greeting Cards</span>
+
+        <div 
+        class="about3_sec8" style="font-size: 12px;">FREE shipping by amazon Only 1 left in stock - order...
+        </div>
+
+</div>
+
+    <!-- infobox4 -->
+<div class="sec8_img4_infobox">
+
+    <div class="sec8_img4">
+    <img src="photos/sec8_img4.jpg" alt="4">
+    </div>
+
+    <span>
+    <a class="link4_sec8 orange" href="https://shorturl.at/bioS5">I LAVA YOU Pop Up Anniversary Card for Wife,Husband,Couple, Musical 3D Romantic Valentines Day Card with..</a>
+    </span>
+
+    <span class="star_rating4">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+        </span>
+        
+        <span class="outoff_rate4 orange">569</span>
+    
+        <div class="history_views4">8k+ viewed in past months</div>
+    
+        <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+        <span class="price4_sec8">16.99</span>
+    
+</div>
+  
+<!-- infobox5 -->
+
+<div class="sec8_img5_infobox">
+
+    <div class="sec8_img5">
+    <img src="photos/sec8_img5.jpg" alt="5">
+    </div>
+
+    <span>
+        <a class="link5_sec8 orange" href="https://shorturl.at/aBM48">Paper Love Frndly Valentines Pop Up Card, 3D Purrfect Love - 100% Recycled and Eco-Friendly, 8" x 6" Cover...</a>
+    </span>
+    <br>
+
+    <span class="star_rating5">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+    </span>
+    
+    <span class="outoff_rate5 orange">51</span>
+
+    <div class="history_views5">200+ viewed in past month</div>
+
+    <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+    <span class="price5_sec8">26.99</span>
+    <br>
+
+</div>
+
+<!-- infobox 6 -->
+
+<div class="sec8_img6_infobox">
+
+        <div class="sec8_img6">
+        <img src="photos/sec8_img6.jpg" alt="6">
+        </div>
+    
+        <span>
+            <a class="link6_sec8 orange" href="https://shorturl.at/uyEMU">Hallmark Paper Wonder Musical Pop Up Anniversary Card, Love Card (S'mores)..</a>
+        </span>
+        <br>
+        <span class="star_rating6">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/star.png" style="height: 15px; width: 15px;">
+        <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+        </span>
+        
+        <span class="outoff_rate6 orange">1,252</span>
+    
+        <div class="history_views6">1K+ viewed in past month</div>
+    
+        <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+        <span class="price6_sec8">8.99</span>
+        <br>
+        <div class="about6_sec8" style="font-size: 12px;">$10.54 shipping</div>
+        <span>Only 17 left in stock (more....</span>    
+</div>
+
+<!--infobox 7 -->
+ 
+<div class="sec8_img7_infobox">
+
+    <div class="sec8_img7">
+    <img src="photos/sec8_img7.jpg" alt="7">
+    </div>
+
+    <span>
+        <a class="link7_sec8 orange" href="https://shorturl.at/dmDST">Cats Cuddling Anniversary Card, Valentines Day Card for Him Her, Lovely Mothe</a>
+    </span>
+
+    <br>
+    <span class="star_rating7">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+    </span>
+     
+    <span class="outoff_rate7 orange">73</span>
+
+    <div class="history_views7">2K+ viewed in past month</div>
+
+    <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+    <span class="price7_sec8">6.99</span>
+    <br>
+    <div class="about7_sec8" style="font-size: 12px;">FREE Shipping by Amazon
+        Only 12 left in stock - order soon...
+        </div>
+       
+</div>
+
+<!--infobox8 -->
+
+<div class="sec8_img8_infobox">
+
+    <div class="sec8_img8">
+    <img src="photos/sec8_img8.jpg" alt="8">
+    </div>
+
+    <span>
+        <a class="link8_sec8 orange" href="https://shorturl.at/rJSX0">Hallmark Paper Wonder Musical Pop Up Birthday Card for Kids (Encanto, Plays The Family Madrigal)</a>
+    </span>
+
+    <br>
+    <span class="star_rating8">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/halfstar.png" style="height:14.5px; width:14.5px;">
+    </span>
+     
+    <span class="outoff_rate8 orange">48</span>
+
+    <div class="history_views8">500K+ viewed in past month</div>
+
+    <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+    <span class="price8_sec8">19.76</span>
+    <br>
+
+    <div class="about8_sec8" style="font-size: 12px;">$10.69 shipping</div>
+       
+</div>
+
+<!--infobox9 -->
+
+<div class="sec8_img9_infobox">
+
+    <div class="sec8_img9">
+    <img src="photos/sec8_img9.jpg" alt="9">
+    </div>
+
+    <span>
+        <a class="link9_sec8 orange" href="https://shorturl.at/abuBU">Valentines Day Card, LIGHT & MUSIC & FIREWORKS Romantic Valentines Gift for Her Him Couple, Pop up Happy Valentine's Card</a>
+    </span>
+
+    <br>
+    <span class="star_rating9">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height: 15px; width: 15px;">
+    <img src="photos/star.png" style="height:15px; width: 15px;">
+    </span>
+     
+    <span class="outoff_rate9 orange">437</span>
+
+    <div class="history_views9">800 bought in past month</div>
+
+    <span class="dollar_sec8" style="width: 5px; height: 5px;">$</span>
+    <span class="price9_sec8">12.99</span>
+    <br>
+
+    <div class="about9_sec8" style="font-size: 12px;">FREE shipping by Amazon</div>  
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- signin_section9 -->
+
+<div class="shop_section9">
+
+    <div class="sign_in_sec9">
+
+    <span class="recommendations_s9">See personalized recommendations</span>
+
+    <div class="sign_in_div">
+    <button class="sign_in">Sign in</button>
+    </div>
+
+     <div class="new_customer">
+      <span> New customer ?</span> 
+    </div> 
+
+    <span class="registration_s9">
+        <a class="start_s9"
+        href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Star here</a>
+      </span>
+
+    </div>
+</div>
+
+<!-- back to -->
+
+<footer>
+
+<div class="foot-panel1">
+
+<span class="back_to"><h4><a href="#" style="color: white; font-size: 13px; text-decoration: none;">Back to top</a></h4></span>
+
+</div>
+
+
+<div class="foot-panel2">
+
+    <!-- panel2_box1 -->
+    <div class="panel2_box1">
+            <h1>
+            <span class="heading_panel2_box1">Get to Know Us</span>
+            </h1>
+            <a class="link_panel2 underline" href="https://www.amazon.jobs/en/">Careers</a>
+            <a class="link_panel2 underline" href="https://www.aboutamazon.com/">Blog</a>
+            <a class="link_panel2 underline" href="https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer">About Amazon</a>
+            <a class="link_panel2 underline" href="https://ir.aboutamazon.com/overview/default.aspx">Investor Relations</a>
+            <a class="link_panel2 underline" href="https://www.amazon.com/gp/browse.html?node=2102313011&ref_=footer_devices">Amazon Devices</a>
+            <a class="link_panel2 underline" href="https://www.amazon.science/">Amazon Science</a>
+
+    </div>
+
+    <!-- panel2_box2 -->
+    <div class="panel2_box2">
+        <h1>
+        <span class="heading_panel2_box2">Make Money with Us</span>
+        </h1>
+        <a class="link_panel2 underline" href="https://sell.amazon.com/?ld=AZFSSOA&ref_=footer_soa">Sell products on Amazon</a>
+        <a class="link_panel2 underline" href="https://sell.amazon.com/programs/amazon-business?ld=usb2bunifooter&ref_=footer_b2b">Sell on Amazon Business</a>
+        <a class="link_panel2 underline" href="https://developer.amazon.com/">Sell apps on Amazon</a>
+        <a class="link_panel2 underline" href="https://affiliate-program.amazon.com/">Become an Affiliate</a>
+        <a class="link_panel2 underline" href="https://advertising.amazon.com/?ref=ext_amzn_ftr">Advertise Your Products</a>
+        <a class="link_panel2 underline" href="https://kdp.amazon.com/en_US/">Self-Publish with Us</a>
+        <a class="link_panel2 underline" href="https://go.thehub-amazon.com/amazon-hub-locker">Host an Amazon Hub</a>
+        <a class="link_panel2 underline" href="https://www.amazon.com/b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore">See More Make Money with Us</a>
+
+    </div>
+
+
+    <!-- panel2_box3 -->
+
+    <div class="panel2_box3">
+        <h1>
+        <span class="heading_panel2_box3">Amazon Payment Products</span>
+        </h1>
+        <a class="link_panel2 underline" href="https://www.amazon.com/dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8">Amazon Business Card</a>
+        <a class="link_panel2 underline" href="https://www.amazon.com/gp/browse.html?node=16218619011&ref_=footer_swp">Shop with Points</a>
+        <a class="link_panel2 underline" href="https://www.amazon.com/gp/browse.html?node=10232440011&ref_=footer_reload_us">Reload Your Balance</a>
+        <a class="link_panel2 underline" href="https://www.amazon.com/gp/browse.html?node=388305011&ref_=footer_tfx">Amazon Currency Converter</a>
+
+    </div>
+
+
+ <!-- panel2_box4 -->
+
+ <div class="panel2_box4">
+    <h1>
+    <span class="heading_panel2_box4">Let Us Help You</span>
+    </h1>
+    <a class="link_panel2 underline" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">Amazon and COVID-19</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">Your Account</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Your Orders</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates">Shipping Rates and Policies</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Returns & Replacements</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Manage Your Content and Devices</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/404">Amazon Assistant</a>
+    <a class="link_panel2 underline" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he">Help</a>
+
+</div>
+</div>
+
+
+<!-- panel3 -->
+<div class="foot-panel3">
+
+    <div class="panel3_box">
+
+        <div
+          class="logo_2">
+        </div>
+
+        <!-- panel3_box1 -->
+        <div class="panel3_box1">
+        <i class="fas fa-globe"></i>
+        <span>English</span>
+        </div>
+
+        <!-- panel3_box2 -->
+        <div class="panel3_box2">
+            <span class="dollar_panel3">
+                $ 
+             </span>
+             <span style="color: #cccccc;">USD - U.S Dollar</span>
+
+        </div>
+
+        <!-- panel3_box3 -->
+        <div class="panel3_box3">
+            <span class="englishflag">.</span>
+            United States
+        </div>
+            
+    </div>
+
+</div>
+    
+
+<!-- foot_panel4 -->
+
+<div class="foot-panel4">
+
+    <div class="panel4_box">
+        <!-- 1 -->
+        <div class="p4_box">
+            <a href="https://music.amazon.com/?ref=dm_aff_amz_com" style="color: #dddddd;" class="link_panel4 underline">
+                Amazon Music
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Stream millions</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">of songs</span>
+            </a>
+            
+        </div>
+
+        <!-- 2 -->
+
+        <div class="p4_box">
+            <a href="https://advertising.amazon.com/?ref=footer_advtsing_amzn_com" style="color: #dddddd;" class="link_panel4 underline">
+                Amazon ads
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Reach customers</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">wherever they</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">spend there time</span>
+            </a>
+            
+        </div>
+
+        <!-- 3 -->  
+
+        <div class="p4_box">
+            <a href="https://www.6pm.com/" style="color: #dddddd;" class="link_panel4 underline">
+                6pm
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Score deals</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">on fashion</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">brands</span>
+            </a>
+            
+        </div>
+
+        <!-- 4 -->
+
+        <div class="p4_box">
+            <a href="https://www.abebooks.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Abebooks
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Books,art</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">& collectible</span>
+            </a>
+            
+        </div>
+
+        <!-- 5 -->
+
+        <div class="p4_box_odd">
+            <a href="https://www.acx.com/" style="color: #dddddd;" class="link_panel4 underline">
+                ACM
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Audiobook Publishing</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Made easy</span>
+            </a>
+            
+        </div>
+
+        <!-- 6 -->
+
+        <div class="p4_box">
+            <a href="https://music.amazon.com/?ref=dm_aff_amz_com" style="color: #dddddd;" class="link_panel4 underline">
+                Sell on amazon
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Start a Selling</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Account</span>
+            </a>
+            
+        </div>
+
+        <!-- 7 -->
+
+
+        <div class="p4_box">
+            <a href="https://www.amazon.com/business/register/org/landing?ref_=footer_retail_b2b" style="color: #dddddd;" class="link_panel4 underline">
+                Amazon
+                <br>
+                Business
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Everthing</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">For</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Your</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Business</span>
+            </a>
+            
+        </div>
+
+        <!-- 8 -->
+        <!--row2 -->
+
+        <div class="p4_box_r2">
+            <a href="https://www.amazon.com/gp/browse.html?node=230659011&ref_=footer_amazonglobal" style="color: #dddddd;" class="link_panel4 underline">
+                AmazonGlobe
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Ship Orders</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Internationally</span>
+            </a>
+            
+        </div>
+
+        <!-- 9 -->
+
+        <div class="p4_box_r2">
+            <a href="https://www.amazon.com/gp/browse.html/ref=vas_sf_load_?node=8098158011" style="color: #dddddd;" class="link_panel4 underline">
+                Home Services
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Experienced Pros</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Happiness</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Guarantee</span>
+            </a>
+            
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="p4_box_r2">
+            <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter" style="color: #dddddd;" class="link_panel4 underline">
+                Amazon Web
+                <br>
+                Services 
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Scalable Cloud</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Computing</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Services</span>
+            </a>
+        </div>
+
+        <!-- 11 -->
+
+        <div class="p4_box_r2">
+            <a href="https://www.audible.in/?ref=Adbl_ip_rdr_from_US&source_code=AUDTM002080318002F&ipRedirectFrom=US&ipRedirectOriginalURL=" style="color: #dddddd;" class="link_panel4 underline">
+                Audible
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Listen to Books &</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Original</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Audio</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Performance</span>
+            </a>
+        </div>
+
+        <!-- 12-->
+  
+        <div class="p4_box_odd_r2">
+            <a href="https://www.boxofficemojo.com/?ref_=amzn_nav_ftr" style="color: #dddddd;" class="link_panel4 underline">
+                Box Office Mojo
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Find Movie</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Box Office Data</span>
+            </a>
+            
+        </div>
+
+        <!-- 13 -->
+
+        <div class="p4_box_r2">
+            <a href="https://www.goodreads.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Goodtreads
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Book reviews</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">&</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">recommendation</span>
+            </a>
+        </div>
+  
+        <!-- 14 -->
+
+        <div class="p4_box_r2">
+            <a href="https://www.imdb.com/" style="color: #dddddd;" class="link_panel4 underline">
+                IMDb
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Movies,Tv</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Celebrieties</span>
+            </a>
+            
+        </div>
+
+
+        <!--row3 -->
+        <!-- 15 -->
+
+        <div class="p4_box_r3">
+            <a href="https://pro.imdb.com/in?redirectUrl=http%3A%2F%2Fpro.imdb.com%2F%3Fref_%3Damzn_nav_ftr" style="color: #dddddd;" class="link_panel4 underline">
+                IMDbPro
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Getinfo</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Entertainment</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Professioinal</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Need</span>
+
+            </a>
+            
+        </div>
+
+        <!-- 16 -->
+
+        <div class="p4_box_r3">
+            <a href="https://kdp.amazon.com/en_US/" style="color: #dddddd;" class="link_panel4 underline">
+                Kindle Direct
+                <br>
+                Publishing
+                <span class="link_panel4 underline" style="color: #999999;">Indie Digital &</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Print Publishing</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Made Easy</span>
+            </a>
+            
+        </div>
+
+
+        <!-- 17 -->
+
+        <div class="p4_box_r3">
+            <a href="https://videodirect.amazon.com/home/landing" style="color: #dddddd;" class="link_panel4 underline">
+                Prime Video
+                <br>
+                Direct 
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Video</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Distribution</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Made Easy</span>
+            </a>
+        </div>
+
+        <!-- 18 -->
+
+        <div class="p4_box_r3">
+            <a href="https://www.shopbop.com/https://www.shopbop.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Shopbop
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Design</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Fashion Brands</span>
+            </a>
+        </div>
+
+        <!-- 19-->
+  
+        <div class="p4_box_odd_r3">
+            <a href="https://www.woot.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Woot!
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Deals and</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">shenanigans</span>
+            </a>
+            
+        </div>
+
+        <!-- 20 -->
+
+        <div class="p4_box_r3">
+            <a href="https://www.zappos.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Zappos
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Shoes &</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Clothing</span>
+            </a>
+        </div>
+  
+        <!-- 21 -->
+
+        <div class="p4_box_r3">
+            <a href="https://ring.com/" style="color: #dddddd;" class="link_panel4 underline">
+                Ring
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Smart Home</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Security</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">System</span>
+            </a>
+            
+        </div>
+    
+        <!-- row4 -->
+        <!-- 22 -->
+
+        <div class="p4_box_r4_gap">
+            <a href="https://blinkforhome.com/?ref=nav_footer" style="color: #dddddd;" class="link_panel4 underline">
+                eero Wifi
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Stream 4k video</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">in Every Room</span>
+            </a>
+            
+        </div>
+
+
+        <!-- 23 -->
+
+        <div class="p4_box_r4">
+            <a href="https://ring.com/neighbors" style="color: #dddddd;" class="link_panel4 underline">
+                Blink
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Smart Security</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">For Every</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Home</span>
+            </a>
+        </div>
+
+        <!-- 24 -->
+
+        <div class="p4_box_r4">
+            <a href="https://www.amazon.com/gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa" style="color: #dddddd;" class="link_panel4 underline">
+                Neighbors App
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Real-Time Crime</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">& Safety Alerst</span>
+            </a>
+        </div>
+
+        <!--25-->
+  
+        <div class="p4_box_odd_r4">
+            <a href="https://www.pillpack.com/"style="color: #dddddd;" class="link_panel4 underline">
+                Amazon Subscription
+                <br>
+                Boxes
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Top subscription boxes</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">right to your door</span>
+            </a>
+            
+        </div>
+
+        <!-- 26 -->
+        
+        <div class="p4_box_r4">
+            <a href="https://eero.com/" style="color: #dddddd;" class="link_panel4 underline">
+                PillPack
+                <br>
+                <span class="link_panel4 underline" style="color: #999999;">Pharmacy</span>
+                <br>
+                <span style="color: #999999;" class="link_panel4 underline">Simplified</span>
+            </a>
+            
+        </div>
+
+        <!-- row5 -->
+
+        <div class="row5">
+            <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou" style="color: #dddddd;" class="link_panel4 underline">
+                Conditions of Use
+            </a>
+
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy" class="link_panel4 underline" style="color:#dddddd ; margin-left: 7px;"><span>Privacy Notice</span>
+                </a>
+
+                <a href="https://www.amazon.com/privacyprefs?ref_=footer_iba" class="link_panel4 underline" style="color:#dddddd ; margin-left: 7px;"><span>Your Ads Privacy Choices</span>
+                </a>
+
+                <br>
+                <span style="color:#dddddd ; margin-left: 47px;">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+                </span>
+            </a>
         </div>
     </div>
 
-    <script src="script.js"></script>
+</div>
+</footer>
 </body>
 </html>
