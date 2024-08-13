@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Appa</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="quiz-container">
         <h1>Quiz App</h1>
+        <button id="start">Start Quiz</button>
+        <div id="timer">Time Remaining: <span id="time">00:00</span></div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
         <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
+        <button id="submit" style="display: none;">Submit Quiz</button>
+        <button id="reset" style="display: none;">Reset Quiz</button>
         <div id="results"></div>
     </div>
     <script src="script.js"></script>
