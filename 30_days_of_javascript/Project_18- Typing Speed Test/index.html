@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Speed Test</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Typing Speed Test</h1>
-        <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
-        <textarea id="user-input" placeholder="Start typing here..." oninput="startTyping()"></textarea>
-        <div id="results">
-            <p id="wpm"></p>
-            <p id="time"></p>
+    <div class="mainDiv">
+        <div class="centerDiv">
+            <h1>Welcome to the Typing Speed Test</h1>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+                <img id="car" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjw0tYLfdhbqL1lHhGnUOVRLNzRcPhDksvvA&s" alt="car" class="car-image">
+            </div>
+            <h2 id="msg">Click 'Start' to begin!</h2>
+            <textarea id="mywords" cols="100" rows="10" placeholder="Click on the Start Button and Type Above Appearing Text as it is..."></textarea>
+            <button id="btn" class="mainBtn">Start</button>
+            <div id="error"></div>
+            <div id="wpm-display">WPM: 0</div>
         </div>
-        <button onclick="resetTest()">Reset</button>
     </div>
     <script src="script.js"></script>
 </body>
