@@ -1,37 +1,139 @@
-/* styles.css */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-}
-
-.container {
+  }
+  
+  .mainDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centerDiv {
     text-align: center;
-    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
     width: 100%;
-}
-
-#text-to-type {
-    font-size: 1.2em;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-#user-input {
+    color: #2980b9;
+    text-shadow: 1px 1px 2px #2c3e50;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  textarea {
     width: 100%;
-    height: 100px;
-    font-size: 1em;
-    padding: 10px;
+    height: 150px;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #34495e;
+    background: #f7f9fb;
     margin-bottom: 20px;
-}
-
-#results {
-    margin-top: 20px;
-}
-
-button {
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 10px #2980b9;
+  }
+  
+  .mainBtn {
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    border: none;
     padding: 10px 20px;
-    font-size: 1em;
-}
+    font-size: 1.2rem;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .mainBtn:hover {
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+    transform: scale(1.05);
+  }
+  
+  .mismatch {
+    color: red;
+    font-weight: bold;
+  }
+  
+  #error {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: red;
+  }
+  
+  /* WPM Display */
+  #wpm-display {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #27ae60;
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    margin: 20px 0;
+    background: #ecf0f1;
+    border-radius: 10px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  
+  #car {
+    position: absolute;
+    top: -10px;
+    width: 50px;
+    transition: left 0.3s ease;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Additional UI Enhancements */
+  .centerDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
