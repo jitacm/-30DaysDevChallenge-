@@ -1,0 +1,110 @@
+/* Reset some basic styles */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f06, #ff7f50);
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffdf00;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.emoji-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.emoji {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: pop 0.4s ease-in-out;
+}
+
+.emoji-name {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.feeling-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.feeling-button {
+    background-color: #ffdf00;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feeling-button:hover {
+    background-color: #ffc107;
+    transform: translateY(-3px);
+}
+
+.generate-random-button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.generate-random-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .emoji {
+        font-size: 3rem;
+    }
+}
