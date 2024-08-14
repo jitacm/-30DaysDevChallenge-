@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8; /* Soft light blue */
+    color: #afafaf;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(145deg, #b348ad, #191a47); 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.root:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #f5f7f8;
+    text-decoration: underline solid 3px #2980b9;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #667788;
+}
+
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.option label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #eff2f5;
+}
+
+select {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: 2px solid #d35a2a;
+    border-radius: 5px;
+    background-color: #f0f4f8;
+    color: #274a69;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #68869b;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #eaecee;
+}
+
+input[type="text"] {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f0f4f8;
+    color: #34495e;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2980b9;
+}
