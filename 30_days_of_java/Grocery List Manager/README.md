@@ -2,6 +2,8 @@
 
 A simple Java application for managing your grocery shopping list.
 
+![Screenshot 2024-08-14 182909](https://github.com/user-attachments/assets/b036143a-da4c-4f99-88b9-6d074cc774bd)
+
 ## Features
 
 - Add items to your shopping list
