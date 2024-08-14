@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Scramble Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Word Scramble Game</h1>
+        <div class="game-box">
+            <div class="scramble-section">
+                <h2 id="scrambleWord">Scrambled Word</h2>
+                <p id="hint">Hint: </p>
+            </div>
+            <div class="input-section">
+                <input id="input" type="text" placeholder="Guess the correct word" />
+            </div>
+            <div class="button-section">
+                <button type="button" onclick="check()">Check</button>
+                <button type="button" onclick="refresh()">Refresh</button>
+            </div>
+            <h3 id="output">Result:</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
