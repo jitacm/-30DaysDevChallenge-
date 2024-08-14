@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Dev Challenge - Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>30 Days Dev Challenge - Project Showcase</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title..." oninput="filterProjects()">
+            <select id="sort" onchange="sortProjects()">
+                <option value="newest">Sort by: Newest</option>
+                <option value="oldest">Sort by: Oldest</option>
+            </select>
+        </div>
+        <div id="projects" class="project-list"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
